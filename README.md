@@ -20,3 +20,5 @@
 ### El usuario administrador podrá acceder al sistema a través de la web con el objetivo de poder agilizar y organizar toda la documentación física a digital, utilizando una interfaz sencilla adecuada, con el objetivo de sea su herramienta de trabajo confiable y efectiva.
 
 ---
+
+Para más detalles, el siguiente link es la presentación  del proyecto: https://sites.google.com/view/fdasf21/inicio
