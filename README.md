@@ -1,5 +1,6 @@
 # POO-2---INTEGRADOR - Versión 1.0.0
-
+#Integrantes
+## Sosa Ayelen, Martinez Lazaro, Duarte Laura, Carlos Pereyra, Luciano Lopez, Silvia Ramirez
  # Software Imprenta Minerva
 
  ## Introducción
