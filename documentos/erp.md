@@ -5,17 +5,62 @@ Actualmente utilizan métodos manuales para el registro de los pedidos de las em
 La empresa necesita un sistema para la gestión de clientes, gestión de stock y gestión de proveedores, dado que el sistema manual, con el que actualmente trabajan, favorecen al desorden y a la pérdida de información esencial para la empresa.
 Otro problema es que el Diseñador gráfico se encuentra con la imposibilidad de modificar el estado en el que se encuentra en la fase de preimpresión.
 # Clientes Potenciales
-Los clientes potenciales para este proyecto son aquellas imprentas que desean realizar de manera automatica el control de stock  y la gestión de pedido s. 
-## Este sistema permitira al usuario realizar pedidos a proveedores. Generar informe de Stock, como también consultar el estado de pedido
+Los clientes potenciales para este proyecto son aquellas imprentas que desean realizar de manera automatica el control de stock  y la gestión de pedidos. 
 
-## _Requisitos esenciales_
- - RF1 Registrar pedidos
- - RF2 Modificar pedidos
- - RF3 Consultar pedidos
- - RF4 Eliminar  pedidos
- - RF5 Visualizar pedidos
- - RF6 Generar informe de Stock
-  
+## _Objetivos del Sistema_
+-Facilitar la carga de los registros de clientes.
+
+-Facilitar la carga de los -Registros de pedidos.
+
+-Llevar un control de stock actualizado. 
+
+-Tener registrados los proveedores.
+
+## _Requisitos_ 
+### Funcionales
+-RF1		Registrar clientes.
+
+-RF2		Modificar los datos de clientes.
+
+-RF3		Consultar a un cliente.
+
+-RF4		Eliminar clientes.
+
+-RF5		Registrar pedidos.
+
+-RF6		Modificar un pedido.
+
+-RF7		Consultar pedido.
+
+-RF8		Eliminar un pedido.
+
+-RF9 	Visualizar pedido.
+
+-RF10	Modificar el estado del diseño.
+
+-RF11 	Visualizar el estado del diseño.
+
+-RF12 	Modificar el estado de impresión.
+
+-RF13 	Generar informe de ventas.
+
+-RF14 	Generar informe de stock.
+
+-RF13 	Generar informe de clientes habituales.
+
+-RF14 	Confirmar la impresión.
+
+-RF15 	Consultar insumos.
+
+-RF16 	Consultar estado de diseño.
+
+-RF17 	Consultar estado de pedido.
+
+### No funcionales
+- Autenticación del usuario.
+- Manejo de roles.
+- Usabilidad.
+
 
 # *Arquitectura de Software*
  - IDE: Visual Studio Code 
