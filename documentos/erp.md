@@ -12,4 +12,12 @@
   
 
 # *Arquitectura de Software*
- - La programacion será sujeta a HTML y CSS para el frontend, utilizando el kit de herramientas extensible Bootstrap, además de otras herramientas como Fontawesome para algunos logos si se requieren. Para el backend, se utilizara un sistema de gestion de base de datos, MySqL y la base de datos programada en SQL a partir del modelo relacional correspondiente. El framework a utilizar, será Spring Boot, esta herramienta nos facilitará el desarrollo de la codificación en java delegando las dependencias a la misma.
+ - IDE: Visual Studio Code 
+ - HTML
+ - CSS
+ - Diseño de frontend: Boopstrap y Fontawesome
+ - Gestión para base de datos: MySql y SQL
+ - Framework: Springboot
+ - Codificación: Java
+ - Arquitectura Cliente Servidor
+ - Documentación: Markdown
