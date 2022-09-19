@@ -16,7 +16,7 @@
 5. El sistema comprueba el ID del cliente.
 6. El sistema registra los datos del nuevo cliente.
 
-![](/Imagenes/Imagen1_CU_RegistrarCliente.jpg)
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/Imagen1_CU_RegistrarCliente.JPG)
 
 **Curso alternativo**
 
