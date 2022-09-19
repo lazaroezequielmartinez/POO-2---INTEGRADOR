@@ -51,6 +51,8 @@
 
 **Curso alternativo**
 
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/CU_Registrar_Cliente_Alternativo.JPG)
+
 5. El sistema verifica que el identificador del cliente ya existe, indica error al registrar cliente, el mismo ya existe en el sistema y finaliza el caso de uso.
 
 **Curso alternativo**
@@ -59,6 +61,8 @@
 5. El sistema verifica que el usuario cancela la acción de registrar cliente y finaliza el caso de uso.
 
 **Curso alternativo**
+
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/CU_Registrar_Cliente_Alternativo2.JPG)
 
 3. El usuario olvidó cargar algún campo.
 4. El usuario presiona _Guardar_ 
