@@ -6,6 +6,7 @@
 ## Casos de uso extendido
 
 **CU: Inicio de sesión**
+
 **Actores:** Personal de atención al público, diseñador gráfico, personal de impresión y administrador.
 
 1. Este caso de uso comienza cuando el usuario desea ingresar al sistema.
