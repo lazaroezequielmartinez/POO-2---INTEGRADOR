@@ -7,6 +7,8 @@
 
 **CU: Inicio de sesión**
 
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/CU_Inicio_Sesión.JPG)
+
 **Actores:** Personal de atención al público, diseñador gráfico, personal de impresión y administrador.
 
 1. Este caso de uso comienza cuando el usuario desea ingresar al sistema.
@@ -17,10 +19,14 @@
 
 **Curso alternativo**
 
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/CU_Inicio_Sesion1.JPG)
+
 4. El sistema no reconoce los datos ingresados.
 5. El sistema devuelve una ventana emergente de alerta de usuario no registrado.
 
 **Curso alternativo**
+
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/CU_Inicio_Sesion2.JPG)
 
 4. El usuario no completó todos los campos.
 5. El sistema devuelve una ventana emergente de alerta.
@@ -31,6 +37,8 @@
 ---
 
 **CU:Registrar cliente.**
+
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/Imagen1_CU_RegistrarCliente.JPG)
 
 **Actores:** Personal de atención al público.
 
