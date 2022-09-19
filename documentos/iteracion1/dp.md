@@ -16,6 +16,8 @@
 5. El sistema comprueba el ID del cliente.
 6. El sistema registra los datos del nuevo cliente.
 
+![Imagen1](/imagenes/Imagen1_CU_RegistrarCliente.jpg)
+
 **Curso alternativo**
 
 5. El sistema verifica que el identificador del cliente ya existe, indica error al registrar cliente, el mismo ya existe en el sistema y finaliza el caso de uso.
