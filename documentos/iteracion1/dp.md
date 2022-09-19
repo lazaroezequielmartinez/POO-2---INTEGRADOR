@@ -4,7 +4,7 @@
 
 # Wireframe y caso de uso
 # Casos de uso extendido
-
+https://www.figma.com/file/BYrQy0NhVxjJSADnU4cPcu/iteracion1pantallas?node-id=41%3A9278
 **CU:Registrar cliente.**
 
 **Actores:** Personal de atención al público.
