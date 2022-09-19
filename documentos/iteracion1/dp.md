@@ -16,7 +16,7 @@
 5. El sistema comprueba el ID del cliente.
 6. El sistema registra los datos del nuevo cliente.
 
-![Imagen1](/Imagenes/Imagen1_CU_RegistrarCliente.jpg)
+![](/Imagenes/Imagen1_CU_RegistrarCliente.jpg)
 
 **Curso alternativo**
 
