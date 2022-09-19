@@ -16,10 +16,12 @@
 5. El usuario accede al sistema.
 
 **Curso alternativo**
+
 4. El sistema no reconoce los datos ingresados.
 5. El sistema devuelve una ventana emergente de alerta de usuario no registrado.
 
 **Curso alternativo**
+
 4. El usuario no completó todos los campos.
 5. El sistema devuelve una ventana emergente de alerta.
 6. El usuario completa los campos.
