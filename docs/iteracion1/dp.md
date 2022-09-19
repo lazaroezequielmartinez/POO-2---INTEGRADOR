@@ -28,6 +28,7 @@
 7. El usuario presiona el botón _Acceder_.
 8. El usuario accede al sistema.
 
+---
 
 **CU:Registrar cliente.**
 
