@@ -74,6 +74,8 @@
 ---
 **CU: Modificar datos del cliente.**
 
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/CU_Modificar_datos_del_cliente.JPG)
+
 **Actores:** Personal de atención al público.
 1.  Este caso de uso comienza cuando el usuario desea modificar los datos del cliente.
 2. El usuario se encuentra en la pantalla de _Consultar cliente_.
@@ -89,7 +91,9 @@
 7. El sistema verifica que el usuario cancela la acción de modificar estado del cliente y finaliza el caso de uso.
 ---
 
-**CU: Consultar clientes.**
+1) **CU: Consultar clientes.**
+
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/1_CU_Consultar_Clientes.JPG)
 
 **Actores:** Personal de atención al público.
 1. Este caso de uso comienza cuando el ususario desea consultar la existencia de un cliente.
@@ -99,10 +103,15 @@
 5.  El usuario cierra la consulta y termina el caso de uso.
    
 **Curso alternativo**
+
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/1_CU_Consultar_Clientes_.JPG)
+
 1. El sistema verifica que el identificador del cliente es incorrecto, indica error y finaliza el caso de uso.
 2. El sistema verifica que no hay existencia del cliente, indica al usuario el mensaje de _El cliente solicitado no existe_ y finaliza el caso de uso.
 ---
 **CU: Eliminar cliente.**
+
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/2_CU_Eliminar_Cliente.JPG)
 
 **Actores:** Personal de atención al público.
 
