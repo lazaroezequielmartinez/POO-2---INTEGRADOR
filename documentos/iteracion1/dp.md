@@ -124,11 +124,11 @@
 
 **Actores:** Personal de atención al público.
 
-1.  Este caso de uso comienza cuando el usuario desea eliminar los datos del cliente.
+1. Este caso de uso comienza cuando el usuario desea eliminar los datos del cliente.
 2. El usuario se encuentra en la pantalla de _Consultar cliente_.
 3. El usuario presiona el boton _Eliminar_ que se encuentra al lado derecho de cada fila, correspondiente al cliente que se desee eliminar. 
 4. El sistema muestra una ventana emergente de alerta. 
-5. El usuario presiona el boton _Aceptar_.
+5. El usuario presiona el boton _Si_.
 6. El sistema elimina los datos del cliente.
 
 **Curso alternativo:**
@@ -157,7 +157,7 @@
 
 **Curso alternativo**
 
-4. El usuario  presiona el boton _Cancelar_.
+4. El usuario  presiona el boton _No_.
 5. El sistema verifica que el usuario cancela la acción de registrar pedido y finaliza el caso de uso.
 
 **Curso alternativo**
