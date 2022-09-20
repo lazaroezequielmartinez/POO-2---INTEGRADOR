@@ -218,12 +218,12 @@
 2. El usuario se encuentra en la pantalla de consular pedido.
 3. El usuario presiona el boton _Eliminar_ que se encuentra al lado derecho de cada fila, correspondiente al pedido que se desee eliminar. 
 4. El sistema muestra una ventana emergente de alerta.
-5. El usuario presiona el boton _Aceptar_.
+5. El usuario presiona el boton _Si_.
 6. El sistema elimina los datos del pedido.
 
 **Curso alternativo:**
 
-1. El usuario preciona el boton _Cancelar_.
+1. El usuario preciona el boton _No_.
 2. El sistema verifica que el usuario cancela la acción de eliminar pedido y finaliza el caso de uso.
 ---
 **CU: Visualizar pedido.**
