@@ -314,5 +314,15 @@
 # Backlog de iteraciones
 
 # Tareas
-
-# Retrospectiva
+# Tareas
+- Para poder realizar estas actividades es necesario tener la base de datos creada y su funcionamiento
+- Para poder iniciar sesión debo ser personal de atención al público, diseñador gráfico, personal de impresión y/o administrador; tener usuario y contraseña
+- Para poder registrar, modificar, consultar y eliminar un cliente debo ser Personal de atención al público; tener registrados correcamente los datos, verificar que sean correctos
+-  Para consultar, modificar y eliminar pedidos debo ser Personal de atención al publico.
+- Para visualizar pedidos debo ser diseñador gráfico, tener id del pedido
+- Para modificar el estado de diseño debo ser diseñador gráfico, tener sesión iniciada.
+- Para consultar estado de diseño debo ser encargado de impresión, tener sesión iniciada
+- Para modificar estado de diseño debo ser encargado de impresión, tener sesión iniciada
+- Para solicitar informe y acciones de ventas debo ser administrador para tener información de las ventas semanales e informe de stock, tener sesión iniciada
+- Para solicitar un informe de clientes habituales debo ser administrador y encargado de impresión para tener un informe de los clientes habituales de los ultimos 30 dias, tener sesión iniciada
+#Retrospectiva
