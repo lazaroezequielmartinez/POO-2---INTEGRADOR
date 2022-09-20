@@ -4,7 +4,7 @@
 
 # Diseño OO
 
-
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/Modelo.JPG)
 
 # Wireframe y caso de uso
 ## Casos de uso extendido
