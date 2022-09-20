@@ -1,6 +1,11 @@
 # Trabajo en equipo
 
-## Sosa Ayelen: Tareas
+### Sosa Ayelen: Tareas
+### Silvia Ramirez: Wireframe y Casos de uso
+### Martinez Lazaro Ezequiel: Wireframe y Casos de uso
+### Duarte Laura: Wireframe y Casos de uso
+### Carlos Pereyra: UML - Modelo
+### Luciano Lopez: UML 
 
 # Diseño OO
 
@@ -342,9 +347,8 @@
 6. El sistema inicia la impresión del informe.
 
 
-
-
 # Backlog de iteraciones
+
 
 # Tareas
 # Tareas
