@@ -349,6 +349,7 @@
 
 # Backlog de iteraciones
 
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/Backlog.JPG)
 
 # Tareas
 - Para poder realizar estas actividades es necesario tener la base de datos creada y su funcionamiento
