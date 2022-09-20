@@ -46,7 +46,7 @@
 2. El sistema solicita que el usuario complete los campos con los datos del nuevo cliente.
 3. El usuario completa los campos con los datos correspondientes.
 4. El usuario presiona el boton _Guardar_.
-5. El sistema comprueba el ID del cliente.
+5. El sistema comprueba si los datos del cliente fueron ingresados en el formato correcto.
 6. El sistema registra los datos del nuevo cliente.
 
 **Curso alternativo**
@@ -116,7 +116,7 @@
 **Actores:** Personal de atención al público.
 
 1.  Este caso de uso comienza cuando el usuario desea eliminar los datos del cliente.
-2. El usuario se encuentra en la pantalla de _Consular cliente_.
+2. El usuario se encuentra en la pantalla de _Consultar cliente_.
 3. El usuario presiona el boton _Eliminar_ que se encuentra al lado derecho de cada fila, correspondiente al cliente que se desee eliminar. 
 4. El sistema muestra una ventana emergente de alerta. 
 5. El usuario presiona el boton _Aceptar_.
