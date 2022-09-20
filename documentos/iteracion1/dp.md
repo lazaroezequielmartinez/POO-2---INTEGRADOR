@@ -182,6 +182,8 @@
 ---
 **CU: Consultar pedido.**
 
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/15_CU_Mod_Ped.JPG)
+
 **Actores:** personal de atención al público.
 
 1. Este caso de uso comienza cuando el ususario desea consultar la existencia de un pedido.
@@ -191,10 +193,15 @@
 5.  El usuario cierra la consulta y termina el caso de uso.
    
 **Curso alternativo**
+
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/16_CU_Mod_Ped.JPG)
+
 1. El sistema verifica que el identificador del pedido es incorrecto, indica error y finaliza el caso de uso.
 2. El sistema verifica que no hay existencia del pedido, indica al usuario el mensaje de _El pedido solicitado no existe_ y finaliza el caso de uso.
 ---
 **CU: Eliminar pedido.**
+
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/17_CU_Elim_Ped.JPG)
 
 **Actores:** Personal de atención al público.
 
@@ -212,15 +219,19 @@
 ---
 **CU: Visualizar pedido.**
 
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/18_CU_Vis_Ped.JPG)
+
 **Actores:** Diseñador gráfico.
 
 1. Este caso de uso comienza cuando el ususario desea visualizar un pedido.
 2. El ususario ingresa en el buscardor el ID del pedido.
 3. El sistema verifica el ID del pedido.
-4. El sistema confirma la existencia del   predido devolviendo la información del mismo en una lista.
+4. El sistema confirma la existencia del predido devolviendo la información del mismo en una lista.
 5.  El usuario cierra la consulta y termina el caso de uso.
    
 **Curso alternativo**
+
+
 1. El sistema verifica que el identificador del pedido es incorrecto, indica error y finaliza el caso de uso.
 2. El sistema verifica que no hay existencia del pedido, indica al usuario el mensaje de _El pedido solicitado no existe_ y finaliza el caso de uso.
 ---
@@ -245,6 +256,8 @@
 
 **Actores:** Encargado de impresión.
 
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/19_CU_Cons_Estado_Dise%C3%B1o.JPG)
+
 1. El caso de uso inicia cuando el usuario quiera verificar el estado del diseño para iniciar la impresión del mismo.
 2. El usuario se encuantra en la pantalla _Visualizar pedido_.
 3. Si el _ESTADO_ figura como _Finalizado_, el sistema habilita la opción de _Imprimir_.
@@ -257,6 +270,8 @@
 ---
 
 **CU: Modificar estado de impresión.**
+
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/20_CU_Vis_Ped.JPG)
 
 **Actores:** Encargado de impresión.
 
@@ -277,6 +292,8 @@
 
 **CU: Solicitar informe de ventas**
 
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/21_CU_Inform_Ventas.JPG)
+
 **Actores:** Administrador.
 1. Este caso de uso inicia cuando el usuario desee obtener un informe de las ventas semanales.
 2. El usuario se encuentra en la pantalla de _Inicio_.
@@ -291,6 +308,8 @@
 ---
 **CU: Solicitar informe de stock**
 
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/23_CU_Inform_Ventas.JPG)
+
 **Actores:** Administrador.
 1. Este caso de uso inicia cuando el usuario desee obtener un informe de stock.
 2. El usuario se encuentra en la pantalla de _Inicio_.
@@ -303,6 +322,8 @@
 6. El sistema inicia la impresión del informe.
 ---
 **CU: Solicitar informe de clientes habituales**
+
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/24_CU_Inform_Ventas.JPG)
 
 **Actores:** Administrador y encargado de impresión.
 
