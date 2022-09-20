@@ -351,7 +351,6 @@
 
 
 # Tareas
-# Tareas
 - Para poder realizar estas actividades es necesario tener la base de datos creada y su funcionamiento
 - Para poder iniciar sesión debo ser personal de atención al público, diseñador gráfico, personal de impresión y/o administrador; tener usuario y contraseña
 - Para poder registrar, modificar, consultar y eliminar un cliente debo ser Personal de atención al público; tener registrados correcamente los datos, verificar que sean correctos
