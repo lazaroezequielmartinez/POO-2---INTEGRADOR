@@ -1,6 +1,10 @@
 # Trabajo en equipo
 
+## Sosa Ayelen: Tareas
+
 # Diseño OO
+
+
 
 # Wireframe y caso de uso
 ## Casos de uso extendido
