@@ -7,7 +7,7 @@
 
 **CU: Inicio de sesión**
 
-![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/CU_Inicio_Sesión.JPG)
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/1_CU.JPG)
 
 **Actores:** Personal de atención al público, diseñador gráfico, personal de impresión y administrador.
 
@@ -19,14 +19,14 @@
 
 **Curso alternativo**
 
-![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/CU_Inicio_Sesion1.JPG)
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/2_CU_1.JPG)
 
 4. El sistema no reconoce los datos ingresados.
 5. El sistema devuelve una ventana emergente de alerta de usuario no registrado.
 
 **Curso alternativo**
 
-![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/CU_Inicio_Sesion2.JPG)
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/3_CU_2.JPG)
 
 4. El usuario no completó todos los campos.
 5. El sistema devuelve una ventana emergente de alerta.
@@ -38,7 +38,7 @@
 
 **CU:Registrar cliente.**
 
-![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/Imagen1_CU_RegistrarCliente.JPG)
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/4_CU_RegClie.JPG)
 
 **Actores:** Personal de atención al público.
 
@@ -51,7 +51,7 @@
 
 **Curso alternativo**
 
-![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/CU_Registrar_Cliente_Alternativo.JPG)
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/5_CU_RegClie_Alt1.JPG)
 
 5. El sistema verifica que el identificador del cliente ya existe, indica error al registrar cliente, el mismo ya existe en el sistema y finaliza el caso de uso.
 
@@ -62,7 +62,7 @@
 
 **Curso alternativo**
 
-![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/CU_Registrar_Cliente_Alternativo2.JPG)
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/6_CU_RegClie_Alt2.JPG)
 
 3. El usuario olvidó cargar algún campo.
 4. El usuario presiona _Guardar_ 
@@ -74,7 +74,7 @@
 ---
 **CU: Modificar datos del cliente.**
 
-![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/CU_Modificar_datos_del_cliente.JPG)
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/7_CU_Mod_Clie.JPG)
 
 **Actores:** Personal de atención al público.
 1.  Este caso de uso comienza cuando el usuario desea modificar los datos del cliente.
@@ -93,7 +93,7 @@
 
 1) **CU: Consultar clientes.**
 
-![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/1_CU_Consultar_Clientes.JPG)
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/8_CU_Cons_Clie.JPG)
 
 **Actores:** Personal de atención al público.
 1. Este caso de uso comienza cuando el ususario desea consultar la existencia de un cliente.
@@ -104,14 +104,14 @@
    
 **Curso alternativo**
 
-![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/1_CU_Consultar_Clientes_.JPG)
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/9_CU_Cons_Clie.JPG)
 
 1. El sistema verifica que el identificador del cliente es incorrecto, indica error y finaliza el caso de uso.
 2. El sistema verifica que no hay existencia del cliente, indica al usuario el mensaje de _El cliente solicitado no existe_ y finaliza el caso de uso.
 ---
 **CU: Eliminar cliente.**
 
-![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/2_CU_Eliminar_Cliente.JPG)
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/10_CU_Elim_Clien.JPG)
 
 **Actores:** Personal de atención al público.
 
@@ -129,6 +129,8 @@
 ---
 **CU: Registrar pedido.**
 
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/11_CU_Reg_Ped.JPG)
+
 **Actores:** Personal de atención al público.
 
 1. Este caso de uso comienza cuando el usuario desea registrar un  nuevo pedido.
@@ -140,6 +142,8 @@
 
 **Curso alternativo**
 
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/12_CU_Reg_Ped.JPG)
+
 5. El sistema verifica que el identificador del pedido ya existe, indica error al registrar pedido, el mismo ya existe en el sistema y finaliza el caso de uso.
 
 **Curso alternativo**
@@ -149,6 +153,8 @@
 
 **Curso alternativo**
 
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/13_CU_Reg_Ped.JPG)
+
 1. El usuario olvidó cargar algún campo.
 2. El usuario presiona _Guardar_ 
 3. El sistema alerta los campos no rellenados.
@@ -157,6 +163,8 @@
 6. El sistema registra los datos del pedido.
 ---
 **CU: Modificar pedido.**
+
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/14_CU_Mod_Ped.JPG)
 
 **Actores:** Personal de atención al público.
 1.  Este caso de uso comienza cuando el usuario desea modificar los datos del pedido.
