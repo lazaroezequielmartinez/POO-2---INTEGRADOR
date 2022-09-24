@@ -101,6 +101,11 @@ Si tiene una sugerencia que mejoraría esto, bifurque el repositorio y cree una 
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+## Licencia
+
+Distribuido bajo la licencia MIT. Consulte `LICENSE.txt` para obtener más información.
+
+
 [Springboot.js]: https://img.shields.io/badge/Springboot-green?style=for-the-badge&logo=Spring
 
 [HTML.html]: https://img.shields.io/badge/HTML-orange?style=for-the-badge&logo=html5
