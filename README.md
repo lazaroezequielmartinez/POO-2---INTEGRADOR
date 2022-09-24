@@ -37,6 +37,8 @@ Este es el por qué:
 
 * El usuario podrá acceder al sistema con el objetivo de poder agilizar y organizar toda la documentación física a digital, **utilizando una interfaz sencilla adecuada**, con el objetivo de sea su **herramienta de trabajo confiable y efectiva**.
 
+<img src="https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/Portada1.jpg">
+
 ### Built With
 
 Los frameworks-libraries utilizados en este proyecto son: 
