@@ -81,11 +81,11 @@ Sigue estos pasos para que el proyecto se ejecute en tu computadora:
 
 ## Roadmap
 
-- [ ] Pantallas listas! 
-- [ ] Database listo!
-- [ ] Prototipo listo!
-- [ ] Lanzamiento oficial!
-- [ ] Soporte post-lanzamiento!
+- [ ] Pantallas, listas! 
+- [ ] Database, listo!
+- [ ] Prototipo, listo!
+- [ ] Lanzamiento oficial
+- [ ] Soporte post-lanzamiento
 - [ ] Ultima versión, lista!
 
 [Springboot.js]: https://img.shields.io/badge/Springboot-green?style=for-the-badge&logo=Spring
