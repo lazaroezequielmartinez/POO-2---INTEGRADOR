@@ -29,7 +29,13 @@
 
 <img src= "https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/Portada.jpg">
 
-En este proyecto se desarrollará el proceso para la elaboración de un sistema informático que se realizará para la empresa gráfica Minerva
+#### En este proyecto se desarrollará el proceso para la elaboración de un sistema informático que se realizará para la empresa gráfica Minerva
+
+Este es el por qué:
+
+* La empresa necesita un software para la gestión de stock y gestión de proveedores, dado que el *sistema manual*, con el que actualmente trabajan, **favorece al desorden y a la pérdida de información esencial para la empresa**.
+
+* El usuario podrá acceder al sistema con el objetivo de poder agilizar y organizar toda la documentación física a digital, **utilizando una interfaz sencilla adecuada**, con el objetivo de sea su **herramienta de trabajo confiable y efectiva**.
 
 # Software Imprenta Minerva
 
