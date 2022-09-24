@@ -16,10 +16,10 @@
   <h4 align="center">College Project</h4>
 
   <p align="center">  
-    Una introducción hacia la programación orientada a objetos
-    <p align="center">An introduction to object-oriented programming</p>
+    Un proyecto utilizando el paradigma de programación orientado a objetos
+    <p align="center">A project using the object-oriented programming paradigm</p>
     <br />
-    <a href="https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR"><strong>Explora los documentos »</strong></a>
+    <a href="https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR"><strong>Explore the documents »</strong></a>
     <br />
     <br />
   </p>
