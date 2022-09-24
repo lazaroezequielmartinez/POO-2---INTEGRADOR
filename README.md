@@ -34,7 +34,7 @@
 - Duarte Laura 
 - Carlos Pereyra 
 - Luciano Lopez 
-- Silvia Ramirez
+- Ramirez Silvia
 
 --- 
 
