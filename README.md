@@ -25,7 +25,7 @@
   </p>
 </div>
 
-## About The Project
+## Acerca del proyecto
 
 <img src= "https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/Portada.jpg">
 
@@ -39,7 +39,7 @@ Este es el por qué:
 
 <img src="https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/Portada1.jpg">
 
-### Built With
+### Construido con
 
 Los frameworks-libraries utilizados en este proyecto son: 
 
@@ -59,27 +59,27 @@ Los frameworks-libraries utilizados en este proyecto son:
 
 * ![Java.js]  ![Maven.js]
 
-## Getting Started !
+## Empezando !
 
 Sigue estos pasos para que el proyecto se ejecute en tu computadora:
 
-### Prerequisites:
+### Requisitos previos:
 
 * 1- Descarga un IDE, Por ejemplo, *Visual Studio Code*
 * 2- Asegúrate de tener un JDK Adecuado
 * 3- Asegúrate de tener el paquete de Java Maven
 
-### Instalation:
+### Instalación:
 
 * 4- Descarga el repositorio en su última versión
 * 5- Configure el Host ubicado en 
 * 6- Corre el proyecto >>>>>>  
 
-## Usage
+## Uso
 
 *En camino!*
 
-## Roadmap
+## Mapa de desarrollo
 
 - [ ] Pantallas, listas! 
 - [ ] Database, listo!
@@ -87,6 +87,19 @@ Sigue estos pasos para que el proyecto se ejecute en tu computadora:
 - [ ] Lanzamiento oficial
 - [ ] Soporte post-lanzamiento
 - [ ] Ultima versión, lista!
+
+## Contribuciones
+
+Las contribuciones son lo que hace que la comunidad de código abierto sea un lugar increíble para aprender, inspirar y crear. Cualquier contribución que hagas es **muy apreciada**.
+
+Si tiene una sugerencia que mejoraría esto, bifurque el repositorio y cree una solicitud de extracción. También puede simplemente abrir un problema con la etiqueta "mejora".
+¡No olvides darle una estrella al proyecto! ¡Gracias de nuevo!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 [Springboot.js]: https://img.shields.io/badge/Springboot-green?style=for-the-badge&logo=Spring
 
