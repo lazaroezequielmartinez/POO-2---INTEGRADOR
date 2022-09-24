@@ -25,6 +25,12 @@
   </p>
 </div>
 
+## About The Project
+
+<img src= "https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/Portada.jpg">
+
+En este proyecto se desarrollará el proceso para la elaboración de un sistema informático que se realizará para la empresa gráfica Minerva
+
 # Software Imprenta Minerva
 
 **Alumnos integrantes de este proyecto:**
