@@ -83,8 +83,8 @@ Sigue estos pasos para que el proyecto se ejecute en tu computadora:
 
 - [ ] Pantallas listas! 
 - [ ] Database listo!
+- [ ] Prototipo listo!
 - [ ] Lanzamiento oficial!
-
 
 
 [Springboot.js]: https://img.shields.io/badge/Springboot-green?style=for-the-badge&logo=Spring
