@@ -29,7 +29,7 @@
 
 <img src= "https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/Portada.jpg">
 
-#### En este proyecto se desarrollará el proceso para la elaboración de un sistema informático que se realizará para la empresa gráfica Minerva
+### En este proyecto se desarrollará el proceso para la elaboración de un sistema informático que se realizará para la empresa gráfica Minerva
 
 Este es el por qué:
 
@@ -37,46 +37,39 @@ Este es el por qué:
 
 * El usuario podrá acceder al sistema con el objetivo de poder agilizar y organizar toda la documentación física a digital, **utilizando una interfaz sencilla adecuada**, con el objetivo de sea su **herramienta de trabajo confiable y efectiva**.
 
-# Software Imprenta Minerva
+### Built With
 
-**Alumnos integrantes de este proyecto:**
+Los frameworks-libraries utilizados en este proyecto son: 
 
-- Sosa Ayelen
-- Martinez Lazaro Ezequiel 
-- Duarte Laura 
-- Carlos Pereyra 
-- Luciano Lopez 
-- Ramirez Silvia
+#### Frontend
 
---- 
+* ![HTML.HTML]
 
-## Introducción
+* ![CSS.Css]
+
+* ![Bootstrap.Bs]
+
+#### Backend
+
+* ![Springboot.js]
+
+* ![Mysql.sql]
+
+* ![Java.js]  ![Maven.js]
 
 
-*Acerca del escenario...*
 
----
 
-En este proyecto se desarrollará el proceso para la elaboración de un sistema informático que se realizará para la empresa gráfica Minerva.
-Sus principales actividades son las ventas de distintos productos Gráficos:
-    
-- Etiquetas
-- Editorial:
-    - revistas
-    - libros
-    - Señalética
-    - Cartelería
-    - Identidad corporativa
-    - Folletería
+[Springboot.js]: https://img.shields.io/badge/Springboot-green?style=for-the-badge&logo=Spring
 
---- 
+[HTML.html]: https://img.shields.io/badge/HTML-orange?style=for-the-badge&logo=html5
 
-## Propuesta de solución
+[CSS.Css]:https://img.shields.io/badge/CSS-blue?style=for-the-badge&logo=css3
 
-#### El usuario administrador podrá acceder al sistema a través de la Web:
+[Bootstrap.Bs]:https://img.shields.io/badge/bootstrap-4D026A?style=for-the-badge&logo=bootstrap
 
-> - Con el objetivo de poder agilizar y organizar toda la documentación física a digital, utilizando una interfaz sencilla adecuada, con el objetivo de sea su herramienta de trabajo confiable y efectiva.
+[Mysql.sql]:https://img.shields.io/badge/MySql-BF8800?style=for-the-badge&logo=mysql
 
----
+[java.js]:https://img.shields.io/badge/JAVA-BF8800?style=for-the-badge&logo=java
 
-Para más detalles, el siguiente link es la presentación  del proyecto: https://sites.google.com/view/fdasf21/inicio
+[Maven.js]:https://img.shields.io/badge/Maven-FE2358?style=for-the-badge&logo=apachemaven
