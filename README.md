@@ -5,6 +5,26 @@
 ![GitHub](https://img.shields.io/github/license/lazaroezequielmartinez/POO-2---INTEGRADOR?style=for-the-badge)
 ![GitHub](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)
 
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/669948_html_code_coding_programming_web_icon.png">
+    <img src="https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/669948_html_code_coding_programming_web_icon.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">Proyecto Universitario</h3>
+  <h4 align="center">College Project</h4>
+
+  <p align="center">  
+    Una introducción hacia la programación orientada a objetos
+    <p align="center">An introduction to object-oriented programming</p>
+    <br />
+    <a href="https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR"><strong>Explora los documentos »</strong></a>
+    <br />
+    <br />
+  </p>
+</div>
+
 # Software Imprenta Minerva
 
 **Alumnos integrantes de este proyecto:**
