@@ -1,3 +1,10 @@
+![GitHub contributors](https://img.shields.io/github/contributors/lazaroezequielmartinez/POO-2---INTEGRADOR?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/lazaroezequielmartinez/POO-2---INTEGRADOR?style=for-the-badge)
+![Packagist Stars](https://img.shields.io/packagist/stars/lazaroezequielmartinez/POO-2---INTEGRADOR?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/lazaroezequielmartinez/POO-2---INTEGRADOR?style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/lazaroezequielmartinez/POO-2---INTEGRADOR?style=for-the-badge)
+![GitHub](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)
+
 # Software Imprenta Minerva
 
 **Alumnos integrantes de este proyecto:**
