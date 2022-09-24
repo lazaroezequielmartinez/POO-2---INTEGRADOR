@@ -117,13 +117,13 @@ Distribuido bajo la licencia MIT. Consulte `LICENSE.txt` para obtener más infor
 ## Agradecimientos a 
 
 * [Img Shields](https://shields.io)
-* [IDE] (https://code.visualstudio.com/)
+* IDE (https://code.visualstudio.com/)
 * [GitHub Pages](https://pages.github.com)
-* [Bootstrap] (https://getbootstrap.com/)
+* Bootstrap (https://getbootstrap.com/)
 * [Font Awesome](https://fontawesome.com)
-* [Icon Finder] (https://www.iconfinder.com/)
-* [Photoshop] (https://www.adobe.com/ar/products/photoshop.html)
-* [Figma Web] (https://www.figma.com/)
+* Icon Finder (https://www.iconfinder.com/)
+* Photoshop (https://www.adobe.com/ar/products/photoshop.html)
+* Figma Web (https://www.figma.com/)
 
 
 [Springboot.js]: https://img.shields.io/badge/Springboot-green?style=for-the-badge&logo=Spring
