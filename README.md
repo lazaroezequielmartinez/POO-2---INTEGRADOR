@@ -105,6 +105,26 @@ Si tiene una sugerencia que mejoraría esto, bifurque el repositorio y cree una 
 
 Distribuido bajo la licencia MIT. Consulte `LICENSE.txt` para obtener más información.
 
+## Equipo de proyecto - Contactos
+
+- Sosa Ayelen - Instagram: [@ayeleensosa_]()
+- Martinez Lazaro Ezequiel - laza_mart1999@hotmail.com - Instagram: [@laza.eze]()
+- Duarte Laura - Instagram: [@laurinha1602]()
+- Carlos Pereyra - 
+- Luciano Lopez -
+- Ramirez Silvia -
+
+## Agradecimientos a 
+
+* [Img Shields](https://shields.io)
+* [IDE] (https://code.visualstudio.com/)
+* [GitHub Pages](https://pages.github.com)
+* [Bootstrap] (https://getbootstrap.com/)
+* [Font Awesome](https://fontawesome.com)
+* [Icon Finder] (https://www.iconfinder.com/)
+* [Photoshop] (https://www.adobe.com/ar/products/photoshop.html)
+* [Figma Web] (https://www.figma.com/)
+
 
 [Springboot.js]: https://img.shields.io/badge/Springboot-green?style=for-the-badge&logo=Spring
 
