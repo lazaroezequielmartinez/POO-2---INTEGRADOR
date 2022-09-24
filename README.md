@@ -59,6 +59,21 @@ Los frameworks-libraries utilizados en este proyecto son:
 
 * ![Java.js]  ![Maven.js]
 
+## Getting Started !
+
+Sigue estos pasos para que el proyecto se ejecute en tu computadora:
+
+### Prerequisites:
+
+* 1- Descarga un IDE, Por ejemplo, *Visual Studio Code*
+* 2- Asegúrate de tener un JDK Adecuado
+* 3- Asegúrate de tener el paquete de Java Maven
+
+### Instalation:
+
+* 4- Descarga el repositorio en su última versión
+* 5- Configure el Host ubicado en 
+* 6- Corre el proyecto >>>>>>  
 
 
 
