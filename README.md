@@ -107,9 +107,9 @@ Distribuido bajo la licencia MIT. Consulte `LICENSE.txt` para obtener más infor
 
 ## Equipo de proyecto - Contactos
 
-- Sosa Ayelen - Instagram: [@ayeleensosa_]()
+- Sosa Ayelen - 
 - Martinez Lazaro Ezequiel - laza_mart1999@hotmail.com - Instagram: [@laza.eze]()
-- Duarte Laura - Instagram: [@laurinha1602]()
+- Duarte Laura - Duarte.m.laura1@gmail.com
 - Carlos Pereyra - 
 - Luciano Lopez -
 - Ramirez Silvia -
