@@ -107,12 +107,12 @@ Distribuido bajo la licencia MIT. Consulte `LICENSE.txt` para obtener más infor
 
 ## Equipo de proyecto - Contactos
 
-- Sosa Ayelen - 
+- Sosa Ayelen - sosaayelencamila@gmail.com
 - Martinez Lazaro Ezequiel - laza_mart1999@hotmail.com 
 - Duarte Laura - Duarte.m.laura1@gmail.com
-- Carlos Pereyra - 
+- Carlos Pereyra - Carlosspereyra.cp@gmail.com
 - Luciano Lopez -
-- Ramirez Silvia -
+- Ramirez Silvia - solecitogith@gmail.com
 
 ## Agradecimientos a 
 
