@@ -111,7 +111,7 @@ Distribuido bajo la licencia MIT. Consulte `LICENSE.txt` para obtener más infor
 - Martinez Lazaro Ezequiel - laza_mart1999@hotmail.com 
 - Duarte Laura - Duarte.m.laura1@gmail.com
 - Carlos Pereyra - Carlosspereyra.cp@gmail.com
-- Luciano Lopez -
+- Luciano Lopez - 6lucianno10@gmail.com
 - Ramirez Silvia - solecitogith@gmail.com
 
 ## Agradecimientos a 
