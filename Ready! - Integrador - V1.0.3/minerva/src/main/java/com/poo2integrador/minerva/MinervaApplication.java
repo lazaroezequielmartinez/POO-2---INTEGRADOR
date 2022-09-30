@@ -22,16 +22,18 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @ComponentScan(basePackages = "com.poo2integrador.minerva.Servicios")
 public class MinervaApplication {
 
-	public static void main(String[] args) {
+	 public static void main(String[] args) {
 		SpringApplication.run(MinervaApplication.class, args);
 	}
+
+
 
 	@Bean
 	public ViewResolver viewResolver() {
 
 		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
 
-		viewResolver.setPrefix("src/main/webapp/WEB-INF/vistas/");
+		viewResolver.setPrefix("src/main/resources/template");
 
 		viewResolver.setSuffix(".jsp");
 
