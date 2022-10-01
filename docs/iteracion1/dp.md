@@ -1,17 +1,17 @@
 # Trabajo en equipo
 
-### Sosa Ayelen: Tareas
-### Ramirez Silvia: Wireframe y Casos de uso
-### Martinez Lazaro Ezequiel: Wireframe y Casos de uso
-### Duarte Laura: Wireframe y Casos de uso
-### Carlos Pereyra: UML - Modelo
-### Luciano Lopez: UML 
+#### Sosa Ayelen: Tareas
+#### Ramirez Silvia: Wireframe y Casos de uso
+#### Martinez Lazaro Ezequiel: Wireframe y Casos de uso
+#### Duarte Laura: Wireframe y Casos de uso
+#### Carlos Pereyra: UML - Modelo
+#### Luciano Lopez: UML 
 
 # Diseño OO
 
-![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/Modelo.JPG)
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/DocModelo.JPG)
 
-# Wireframe y caso de uso
+# Wireframe y casos de uso
 ## Casos de uso extendido
 
 **CU: Inicio de sesión**
@@ -349,9 +349,10 @@
 
 # Backlog de iteraciones
 
-![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/Backlog.JPG)
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/BacklogIteraciones1.jpg)
 
 # Tareas
+### Lista completa:
 - Para poder realizar estas actividades es necesario tener la base de datos creada y su funcionamiento
 - Para poder iniciar sesión debo ser personal de atención al público, diseñador gráfico, personal de impresión y/o administrador; tener usuario y contraseña
 - Para poder registrar, modificar, consultar y eliminar un cliente debo ser Personal de atención al público; tener registrados correcamente los datos, verificar que sean correctos
@@ -362,4 +363,8 @@
 - Para modificar estado de diseño debo ser encargado de impresión, tener sesión iniciada
 - Para solicitar informe y acciones de ventas debo ser administrador para tener información de las ventas semanales e informe de stock, tener sesión iniciada
 - Para solicitar un informe de clientes habituales debo ser administrador y encargado de impresión para tener un informe de los clientes habituales de los ultimos 30 dias, tener sesión iniciada
-#Retrospectiva
+
+### Lista para esta iteración:
+
+- Para poder realizar estas actividades es necesario tener la base de datos creada y su funcionamiento
+- Para poder iniciar sesión debo ser personal de atención al público, diseñador gráfico, personal de impresión y/o administrador; tener usuario y contraseña
