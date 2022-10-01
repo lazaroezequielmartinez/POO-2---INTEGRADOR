@@ -39,7 +39,7 @@ This is why:
 
 <img src="https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/Portada1.jpg">
 
-### built with
+### Built with
 
 The frameworks-libraries used in this project are: 
 
