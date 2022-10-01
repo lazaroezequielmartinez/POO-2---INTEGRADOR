@@ -25,23 +25,23 @@
   </p>
 </div>
 
-## Acerca del proyecto
+## About the project
 
 <img src= "https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/Portada.jpg">
 
-### En este proyecto se desarrollará el proceso para la elaboración de un sistema informático que se realizará para la empresa gráfica Minerva
+### In this project, the process for the elaboration of a computer system that will be carried out for the graphic company Minerva will be developed.
 
-Este es el por qué:
+This is why:
 
-* La empresa necesita un software para la gestión de stock y gestión de proveedores, dado que el *sistema manual*, con el que actualmente trabajan, **favorece al desorden y a la pérdida de información esencial para la empresa**.
+* The company needs software for stock management and supplier management, since the *manual system*, with which they currently work, **favors disorder and the loss of essential information for the company**.
 
-* El usuario podrá acceder al sistema con el objetivo de poder agilizar y organizar toda la documentación física a digital, **utilizando una interfaz sencilla adecuada**, con el objetivo de sea su **herramienta de trabajo confiable y efectiva**.
+* The user will be able to access the system in order to streamline and organize all the physical to digital documentation, **using a suitable simple interface**, with the aim of being his **reliable and effective work tool**.
 
 <img src="https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/Portada1.jpg">
 
-### Construido con
+### built with
 
-Los frameworks-libraries utilizados en este proyecto son: 
+The frameworks-libraries used in this project are: 
 
 #### Frontend
 
@@ -57,43 +57,60 @@ Los frameworks-libraries utilizados en este proyecto son:
 
 * ![Mysql.sql]
 
-* ![Java.js]  ![Maven.js]
+* ![Java.js]  ![Maven.js] 
+  
+* ![Thymeleaf.js]
 
-## Empezando !
+## Getting Started
 
-Sigue estos pasos para que el proyecto se ejecute en tu computadora:
+Follow these steps to get the project running on your computer:
 
-### Requisitos previos:
+### Prerequisites:
 
-* 1- Descarga un IDE, Por ejemplo, *Visual Studio Code*
-* 2- Asegúrate de tener un JDK Adecuado
-* 3- Asegúrate de tener el paquete de Java Maven
+* 1- Download an IDE, For example, *Visual Studio Code*
+* 2- Make sure you have a suitable JDK (Minimum Java 8)
+* 3- Make sure you have the Java Maven extension
+* 4- If you use Visual Studio Code, as a recommendation you should install the Spring Boot Tools extension and Spring Boot Dashboard
 
-### Instalación:
+### Installation:
 
-* 4- Descarga el repositorio en su última versión
-* 5- Configure el Host ubicado en 
-* 6- Corre el proyecto >>>>>>  
+* 4- Download the repository in its latest version, or
+clone the repository in your IDE: 
 
-## Uso
+```sh
+   git clone https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR
+   ```
 
-*En camino!*
+* 5 - From the terminal, enter:
 
-## Mapa de desarrollo
+```sh
+   mvn spring-boot:run
+   ```
+*  *Or you can run the project from the Spring Boot Dashboard*
 
-- [ ] Pantallas, listas! 
-- [ ] Database, listo!
-- [ ] Prototipo, listo!
-- [ ] Lanzamiento oficial
-- [ ] Soporte post-lanzamiento
-- [ ] Ultima versión, lista!
+* 6 - Open a web browser and paste this url:
 
-## Contribuciones
+```sh
+   http://localhost:8080/
+   ```
 
-Las contribuciones son lo que hace que la comunidad de código abierto sea un lugar increíble para aprender, inspirar y crear. Cualquier contribución que hagas es **muy apreciada**.
+## Usage
 
-Si tiene una sugerencia que mejoraría esto, bifurque el repositorio y cree una solicitud de extracción. También puede simplemente abrir un problema con la etiqueta "mejora".
-¡No olvides darle una estrella al proyecto! ¡Gracias de nuevo!
+In this repository, [this address](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/tree/main/.test/.idea) will take you to documentation that will help you navigate the Project. Screenshots will be uploaded to help you.
+
+## Roadmap
+
+- [ ] Prototype, ready!
+- [ ] Official launch, done!
+- [ ] Latest version, done!
+- [ ] Dark mode, done!
+
+## Contributions
+
+Contributions are what make the open source community an amazing place to learn, inspire, and create. Any contribution you make is **greatly appreciated**.
+
+If you have a suggestion that would improve this, please fork the repository and create a pull request. You can also simply open an issue with the "improvement" tag.
+Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -101,11 +118,11 @@ Si tiene una sugerencia que mejoraría esto, bifurque el repositorio y cree una 
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## Licencia
+## License
 
-Distribuido bajo la licencia MIT. Consulte `LICENSE.txt` para obtener más información.
+Distributed under the MIT license. See `LICENSE.txt` for more information.
 
-## Equipo de proyecto - Contactos
+## Project team - Contacts
 
 - Sosa Ayelen - sosaayelencamila@gmail.com
 - Martinez Lazaro Ezequiel - laza_mart1999@hotmail.com 
@@ -114,17 +131,20 @@ Distribuido bajo la licencia MIT. Consulte `LICENSE.txt` para obtener más infor
 - Luciano Lopez - 6lucianno10@gmail.com
 - Ramirez Silvia - solecitogith@gmail.com
 
-## Agradecimientos a 
+## Thanks to
 
 * [Img Shields](https://shields.io)
 * IDE (https://code.visualstudio.com/)
 * [GitHub Pages](https://pages.github.com)
 * Bootstrap (https://getbootstrap.com/)
 * [Font Awesome](https://fontawesome.com)
+* Maven Central Repository (https://mvnrepository.com/repos/central)
 * Icon Finder (https://www.iconfinder.com/)
 * Photoshop (https://www.adobe.com/ar/products/photoshop.html)
 * Figma Web (https://www.figma.com/)
 
+
+[Thymeleaf.js]: https://img.shields.io/badge/Thymeleaf-007918?style=for-the-badge&logo=thymeleaf
 
 [Springboot.js]: https://img.shields.io/badge/Springboot-green?style=for-the-badge&logo=Spring
 
