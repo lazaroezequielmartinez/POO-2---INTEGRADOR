@@ -12,6 +12,7 @@
     <img src="https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/669948_html_code_coding_programming_web_icon.png" alt="Logo" width="80" height="80">
   </a>
 
+  <h3 align="center">Universidad Nacional de Misiones</h3>
   <h3 align="center">Proyecto Universitario</h3>
   <h4 align="center">College Project</h4>
 
