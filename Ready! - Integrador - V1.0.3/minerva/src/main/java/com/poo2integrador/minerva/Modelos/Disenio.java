@@ -16,4 +16,7 @@ public class Disenio {
     @Column(name = "id", nullable = false)
     private Long id;
 
+    @ManyToOne
+    private Disenio disenio;
+
 }

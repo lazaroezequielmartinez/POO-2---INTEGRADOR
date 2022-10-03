@@ -8,10 +8,12 @@ import javax.persistence.*;
 @Entity
 @Getter
 @Setter
-public class Informes {
+public class Informe {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", nullable = false)
     private Long id;
 
+    @OneToOne
+    private Informe informe;
 }
