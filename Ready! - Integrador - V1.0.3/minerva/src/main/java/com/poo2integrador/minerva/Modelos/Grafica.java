@@ -15,5 +15,21 @@ public class Grafica {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", nullable = false)
     private Long id;
+    @Column (name = "nombre")
+    private String nombres;
+    @Column (name = "razonSocial")
+    private Integer  razonSocial;
+    @Column (name = "calle")
+    private String calle;
+    @Column (name = "altura")
+    private String altura;
+    @Column (name = "cuit")
+    private Integer cuit;
+
+
+
+
+
+
 
 }

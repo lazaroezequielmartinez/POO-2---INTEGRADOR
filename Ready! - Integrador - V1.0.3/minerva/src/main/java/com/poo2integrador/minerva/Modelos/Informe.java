@@ -13,6 +13,12 @@ public class Informe {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", nullable = false)
     private Long id;
+    @Column(name ="estadoInforme")
+    private String estadoInforme;
+    @Column(name ="descripcion")
+    private String descripcion;
+
+
 
     @OneToOne
     private Informe informe;

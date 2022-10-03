@@ -14,5 +14,9 @@ public class Stock {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", nullable = false)
     private Long id;
+    @Column (name ="tipoDeInsumo")
+    private String tipoDeInsumos;
+    @Column(name="cantidad")
+    private Integer cantidad;
 
 }

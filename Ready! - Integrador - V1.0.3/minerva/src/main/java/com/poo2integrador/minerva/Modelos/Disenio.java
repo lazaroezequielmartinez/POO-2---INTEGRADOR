@@ -15,6 +15,10 @@ public class Disenio {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", nullable = false)
     private Long id;
+    @Column(name ="estado")
+    private String estado;
+    @Column(name ="tipoDisenio")
+    private String tipoDisenio;
 
     @ManyToOne
     private Disenio disenio;
