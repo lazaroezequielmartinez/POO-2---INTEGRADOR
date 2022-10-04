@@ -99,7 +99,7 @@
 
 **Curso alternativo:**
 
-4. El usuario preciona el boton _Cancelar_.
+4. El usuario preciona el boton _No_.
 5. El sistema verifica que el usuario cancela la acción de eliminar cliente y finaliza el caso de uso.
 ---
 **CU: Registrar pedido.**
