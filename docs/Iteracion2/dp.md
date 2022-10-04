@@ -209,7 +209,11 @@
 1. El sistema verifica que el identificador del pedido es incorrecto, indica error y finaliza el caso de uso.
 2. El sistema verifica que no hay existencia del pedido, indica al usuario el mensaje de _El pedido solicitado no existe_ y finaliza el caso de uso.
 ---
-# Backlog de iteraciones
+# Backlog de iteración 2 
+
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/BacklogIT2_1.JPG)
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/BacklogIT2_2.JPG)
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/BacklogIT2_3.JPG)
 
 # Tareas
 ## Lista para esta iteración:
