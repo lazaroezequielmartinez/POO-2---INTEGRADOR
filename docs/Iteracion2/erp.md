@@ -1,3 +1,4 @@
+No se realizaron cambios que fueran signiicativos para el desarrollo del software.
 # *_Especificacion de requisitos de Software_*
 # Escenario
 La empresa “Gráfica Tucán” está ubicada en la localidad de Posadas Misiones, se dedica ventas de distintos productos Gráficos (Etiquetas. Editorial: revistas, libros. Señalética. Cartelería. Identidad corporativa. Folletería)
