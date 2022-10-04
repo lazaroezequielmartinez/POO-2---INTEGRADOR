@@ -1,12 +1,12 @@
 No se realizaron cambios que fueran significativos para el desarrollo del software.
 # *_Especificacion de requisitos de Software_*
 # Escenario
-La empresa “Gráfica Tucán” está ubicada en la localidad de Posadas Misiones, se dedica ventas de distintos productos Gráficos (Etiquetas. Editorial: revistas, libros. Señalética. Cartelería. Identidad corporativa. Folletería)
+La empresa “Gráfica Tucán” está ubicada en la localidad de Posadas Misiones, se dedica a ventas de distintos productos gráficos (Etiquetas. Editorial: revistas, libros, señalética, cartelería, identidad corporativa, folletería)
 Actualmente utilizan métodos manuales para el registro de los pedidos de las empresas. Los datos que se toman son: Fecha, Nombre, Domicilio, Teléfono, Fecha de entrega, Presupuesto y Trabajos realizados. La empresa posee clientes habituales, y eventuales los cuales están registrados en documentos físicos.
-La empresa necesita un sistema para la gestión de clientes, gestión de stock y gestión de proveedores, dado que el sistema manual, con el que actualmente trabajan, favorecen al desorden y a la pérdida de información esencial para la empresa.
+La empresa necesita un sistema para la gestión de clientes, gestión de stock, dado que el sistema manual, con el que actualmente trabajan, favorecen al desorden y a la pérdida de información esencial para la empresa.
 Otro problema es que el Diseñador gráfico se encuentra con la imposibilidad de modificar el estado en el que se encuentra en la fase de preimpresión.
 # Clientes Potenciales
-Los clientes potenciales para este proyecto son aquellas imprentas que desean realizar de manera automatica el control de stock  y la gestión de pedidos. 
+Los clientes potenciales para este proyecto son aquellas imprentas que desean realizar de manera automática el control de stock  y la gestión de pedidos. 
 
 ## _Objetivos del Sistema_
 - Facilitar la carga de los registros de clientes.
@@ -14,8 +14,6 @@ Los clientes potenciales para este proyecto son aquellas imprentas que desean re
 - Facilitar la carga de los -Registros de pedidos.
 
 - Llevar un control de stock actualizado. 
-
-- Tener registrados los proveedores.
 
 ## _Requisitos_ 
 ### Funcionales
