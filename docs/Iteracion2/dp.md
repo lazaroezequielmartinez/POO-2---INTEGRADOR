@@ -7,7 +7,7 @@
 ![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/DocModelo.JPG)
 
 # Wireframe y caso de uso
-En esta iteración, abarcaremos unicamente los casos de uso con el wareframe respectivo del rol de Personal de atención al público.
+##En esta iteración, abarcaremos unicamente los casos de uso con el wareframe respectivo del rol de Personal de atención al público.
 
 ---
 
