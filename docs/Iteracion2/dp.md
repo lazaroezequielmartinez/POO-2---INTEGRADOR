@@ -221,3 +221,5 @@
 - Para poder iniciar sesión debo ser personal de atención al público; tener usuario y contraseña.
 - Para poder registrar, modificar, consultar y eliminar un cliente debo ser Personal de atención al público; tener registrados correcamente los datos, verificar que sean correctos.
 - Para consultar, modificar y eliminar pedidos debo ser Personal de atención al publico.
+
+# Retrospectiva
