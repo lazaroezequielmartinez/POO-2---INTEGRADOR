@@ -1,5 +1,6 @@
 package com.poo2integrador.minerva.Modelos;
 
+import com.sun.istack.NotNull;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -15,8 +16,12 @@ public class Disenio {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", nullable = false)
     private Long id;
+
+//    @NotBlank(message = "El campo estado es obligatorio ")
     @Column(name ="estado")
+//    @NotBlank
     private String estado;
+//    @NotBlank
     @Column(name ="tipoDisenio")
     private String tipoDisenio;
 
