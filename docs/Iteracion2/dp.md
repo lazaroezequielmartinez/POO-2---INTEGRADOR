@@ -1,4 +1,3 @@
-
 # Trabajo en equipo
 ![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/grupo%20de%20trabajo%20I2.jpeg)
 
@@ -86,7 +85,7 @@
 ---
 **CU: Eliminar cliente.**
 
-![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/10_CU_Elim_Clien.JPG)
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/CU_ConsultarPedido_AtencionPublico.JPG)
 
 **Actores:** Personal de atención al público.
 
@@ -99,7 +98,7 @@
 
 **Curso alternativo:**
 
-4. El usuario preciona el boton _No_.
+4. El usuario preciona el boton _Cancelar_.
 5. El sistema verifica que el usuario cancela la acción de eliminar cliente y finaliza el caso de uso.
 ---
 **CU: Registrar pedido.**
@@ -213,4 +212,8 @@
 # Backlog de iteraciones
 
 # Tareas
-# Retrospectiva
+## Lista para esta iteración:
+- Para poder realizar estas actividades es necesario tener la base de datos creada y su funcionamiento.
+- Para poder iniciar sesión debo ser personal de atención al público; tener usuario y contraseña.
+- Para poder registrar, modificar, consultar y eliminar un cliente debo ser Personal de atención al público; tener registrados correcamente los datos, verificar que sean correctos.
+- Para consultar, modificar y eliminar pedidos debo ser Personal de atención al publico.
