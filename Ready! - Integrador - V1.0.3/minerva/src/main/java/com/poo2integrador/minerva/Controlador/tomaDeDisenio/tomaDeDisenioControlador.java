@@ -1,4 +1,4 @@
-package com.poo2integrador.minerva.Controlador.AtencionCliente;
+package com.poo2integrador.minerva.Controlador.tomaDeDisenio;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
