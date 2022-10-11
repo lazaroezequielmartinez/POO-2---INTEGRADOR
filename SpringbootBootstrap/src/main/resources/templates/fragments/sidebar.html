@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="sidebar" class='active' th:fragment="sidebar"><!--sidebar-->
+    <div class="sidebar-wrapper active">
+        <div class="sidebar-header">
+        </div>
+        <div class="sidebar-menu">
+            <ul class="menu">
+                <li class='sidebar-title'>Menú principal</li>
+
+                <li class="sidebar-item active ">
+                    <a href="index.html" class='sidebar-link'>
+                        <i data-feather="home" width="20"></i>
+                        <span>Resumen</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+    </div>
+</div>
+</body>
+</html>
