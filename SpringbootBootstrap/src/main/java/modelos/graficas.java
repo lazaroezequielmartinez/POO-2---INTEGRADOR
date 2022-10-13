@@ -1,11 +1,8 @@
-package com.springboot.bootstrap.modelos;
+package modelos;
 
-import jdk.jfr.SettingDefinition;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
 
 import javax.persistence.*;
 
@@ -13,8 +10,8 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity
-@Table(name = "GRAFICA")
-public class Grafica {
+@Table(name = "graficas")
+public class graficas {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_grafica", nullable = false)

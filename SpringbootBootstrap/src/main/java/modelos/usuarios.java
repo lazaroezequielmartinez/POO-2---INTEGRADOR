@@ -1,9 +1,9 @@
-package com.springboot.bootstrap.modelos;
+package modelos;
 
 import javax.persistence.Column;
 import javax.persistence.Id;
 
-public class Usuario {
+public class usuarios {
     @Id
     @Column(name="dni")
     private Integer dni;

@@ -1,4 +1,4 @@
-package com.springboot.bootstrap.modelos;
+package modelos;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,8 +10,8 @@ import java.util.Date;
 @Getter
 @NoArgsConstructor
 @Entity
-@Table(name = "PEDIDOS")
-public class Pedido {
+@Table(name = "pedidos")
+public class pedidos {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_pedidos", nullable = false)

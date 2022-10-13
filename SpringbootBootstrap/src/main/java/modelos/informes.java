@@ -1,4 +1,4 @@
-package com.springboot.bootstrap.modelos;
+package modelos;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,8 +10,8 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity
-@Table(name = "INFORME")
-public class Informe {
+@Table(name = "informes")
+public class informes {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_informe", nullable = false)
