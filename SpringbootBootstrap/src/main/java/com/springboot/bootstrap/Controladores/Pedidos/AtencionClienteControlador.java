@@ -13,7 +13,7 @@ public class AtencionClienteControlador {//carga pedidos
     @GetMapping("/cargarPedido")
     public String cargarPedidos(Model model){
 
-        return "AtenPublicoRegCli";
+        return "Nuevos clientes - Semanal";
     }
 
     @PostMapping("/nuevoPedido")//registra nuevo pedido
