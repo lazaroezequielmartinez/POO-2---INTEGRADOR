@@ -14,6 +14,5 @@ public class LoginControlador {
     @RequestMapping("/homeAtenPub")
     public String loginSubmit(){
         return "/pages/AtenPubPrin";
-
     }
 }

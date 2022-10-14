@@ -10,13 +10,20 @@ public class AtenPubConfControlador {
     public String loginSubmit(){
         return "/pages/configAtenPub";}
 
-    @RequestMapping("/AtenPubConCli")
-    public String holi(){
-        return "/pages/AtenPubConCli";}
-
     @RequestMapping("/AtenPubRegCli")
     public String RegCliente(){
         return "/pages/AtenPubRegCli";}
 
+    @RequestMapping("/AtenPubConCli")
+    public String consulCli(){
+        return "/pages/AtenPubConCli";}
+
+    @RequestMapping("/AtenPubRegPed")
+    public String regPedido(){
+        return "/pages/AtenPubRegPed";}
+
+    @RequestMapping("/AtenPubConPed")
+    public String consulPed(){
+        return "/pages/AtenPubConPed";}
 
 }
