@@ -11,10 +11,10 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Entity
 @Table(name = "stock")
-public class stock {
+public class Stock {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_stock", nullable = false)
+    @Column(name = "id_stock")
     private Integer id;
     @Column(name="pedido")
     private Integer pedidos;

@@ -1,9 +1,17 @@
 package modelos;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-public class usuarios {
+import javax.persistence.*;
+
+@Setter
+@Getter
+@NoArgsConstructor
+@Entity
+@Table(name="usuarios")
+public class Usuarios {
     @Id
     @Column(name="dni")
     private Integer dni;
@@ -15,5 +23,9 @@ public class usuarios {
     private String email;
     @Column(name="rol")
     private String rol;
+
+    @ManyToOne
+    @JoinColumn(name = "id_sucursal")
+    private Sucursales sucursal;
 
 }

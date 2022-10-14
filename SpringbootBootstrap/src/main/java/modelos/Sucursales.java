@@ -10,20 +10,21 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity
-@Table(name = "insumos")
-public class insumos {
+@Table(name = "sucursales")
+public class Sucursales {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_informe", nullable = false)
+    @Column(name = "id_grafica", nullable = false)
     private Integer id;
-
-    @Column(name="tipo")
-    private String tipo;
     @Column(name="nombre")
     private String nombre;
-    @Column(name="descripcion")
-    private String descripcion;
-    @Column(name="cantidad")
-    private Integer cantidad;
+    @Column(name="razon_social")
+    private Integer razon_social;
+    @Column(name="calle")
+    private String calle;
+    @Column(name="altura")
+    private String altura;
+
 
 }
+

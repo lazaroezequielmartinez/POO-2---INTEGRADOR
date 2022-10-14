@@ -6,12 +6,14 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
+
 @Setter
 @Getter
 @NoArgsConstructor
 @Entity
 @Table(name = "pedidos")
-public class pedidos {
+public class Pedidos {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_pedidos", nullable = false)
@@ -30,5 +32,17 @@ public class pedidos {
     private Date fecha_entrega;
     @Column(name="presupuesto")
     private Float presupuesto;
+
+    @ManyToOne
+    @JoinColumn(name = "id_usuario")
+    private Usuarios usuario;
+
+
+    @ManyToMany
+    @JoinTable(
+            name = "pedido_tiene_insumos",
+            joinColumns = @JoinColumn(name = "id_pedido"),
+            inverseJoinColumns = @JoinColumn(name = "id_insumo"))
+    List<Insumos> insumos;
 
 }
