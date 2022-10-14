@@ -18,5 +18,7 @@ public class AtenPubConfControlador {
     public String RegCliente(){
         return "/pages/AtenPubRegCli";}
 
-
+    @RequestMapping("/regiscli")
+    public String RegCl(){
+        return "/pages/regiscli";}
 }
