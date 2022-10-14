@@ -33,16 +33,4 @@ public class Pedidos {
     @Column(name="presupuesto")
     private Float presupuesto;
 
-    @ManyToOne
-    @JoinColumn(name = "id_usuario")
-    private Usuarios usuario;
-
-
-    @ManyToMany
-    @JoinTable(
-            name = "pedido_tiene_insumos",
-            joinColumns = @JoinColumn(name = "id_pedido"),
-            inverseJoinColumns = @JoinColumn(name = "id_insumo"))
-    List<Insumos> insumos;
-
 }

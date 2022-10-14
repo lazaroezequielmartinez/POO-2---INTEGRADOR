@@ -1,0 +1,14 @@
+body {
+background: url(imagenesP/fondo.png);
+background-size: cover;
+background-attachment: fixed;
+}
+
+.bg-contenedor{
+    background-color: antiquewhite;
+    border-radius: 4%;
+}
+
+.navbar{
+    background-color: rgb(235, 231, 231);
+}

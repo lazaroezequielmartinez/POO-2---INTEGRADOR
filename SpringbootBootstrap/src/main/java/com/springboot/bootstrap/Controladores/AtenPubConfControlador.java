@@ -9,4 +9,14 @@ public class AtenPubConfControlador {
     @RequestMapping("/configAtenPub")
     public String loginSubmit(){
         return "/pages/configAtenPub";}
+
+    @RequestMapping("/AtenPubConCli")
+    public String holi(){
+        return "/pages/AtenPubConCli";}
+
+    @RequestMapping("/AtenPubRegCli")
+    public String RegCliente(){
+        return "/pages/AtenPubRegCli";}
+
+
 }

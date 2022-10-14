@@ -1,18 +1,13 @@
 package modelos;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-import javax.persistence.*;
-
-@Setter
-@Getter
-@NoArgsConstructor
-@Entity
-@Table(name="usuarios")
-public class Usuarios {
+public class usuarios {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="dni")
     private Integer dni;
     @Column(name="nombre")
@@ -23,9 +18,5 @@ public class Usuarios {
     private String email;
     @Column(name="rol")
     private String rol;
-
-    @ManyToOne
-    @JoinColumn(name = "id_sucursal")
-    private Sucursales sucursal;
 
 }
