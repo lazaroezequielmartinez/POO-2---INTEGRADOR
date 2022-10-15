@@ -1,5 +1,5 @@
 body {
-background: url(imagenesP/fondo.png);
+background url("/static/css/images/fondo.jpg");
 background-size: cover;
 background-attachment: fixed;
 }

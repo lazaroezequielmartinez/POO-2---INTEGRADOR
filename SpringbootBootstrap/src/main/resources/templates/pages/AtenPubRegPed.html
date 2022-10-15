@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registrar Pedido</title>
-  <link rel="stylesheet" href="estiloAC.css">
+  <title>Registrar pedido</title>
+  <link rel="stylesheet" href="src/main/resources/static/css/styles.css">
   <!-- Icono de la ventana-->
-  <link rel="icon" href="imagenesP/buho.ico">
+  <link rel="icon" href="images/buho.ico">
   <!-- Bootstrap-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
   <!-- Tipo de letra-->
@@ -23,18 +23,10 @@
 <!-- barra de navegración-->
 <nav class="navbar">
   <a class="navbar-brand mx-4 text-danger" href="#" >
-    <img src="imagenesP/logo_minerva.png" width="38" height="34" >Registrar Clientes
-  </a>
+    <img src="/images/logo_minerva.png" width="38" height="34" >Registrar pedido</a>
 </nav>
 
 <form class="login100-form validate-form p-b-33 p-t-5" th:action="@{/configAtenPub}" method="post"><button class="login100-form-btn2" type="submit">Volver</button></form>
-
-<div id="liveAlertPlaceholder"></div>
-<button type="button" class="btn btn-success" id="liveAlertBtn">Guardar</button>
-
-<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Cancelar
-</button>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -47,37 +39,69 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
-        <button type="button" class="btn btn-primary">Sí</button>
+        <form class="login100-form validate-form p-b-33 p-t-5" th:action="@{/configAtenPub}" method="post">
+          <button class="btn btn-primary"  type="submit">Sí</button></form>
       </div>
     </div>
   </div>
 </div>
+<!-- Contenedor-->
+<div class="container col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8  ">
+  <div class= "container col-sm-12 col-md-8 col-lg-8 col-xl-8  my-4 px-2 py-2 bg-contenedor" >
+    <h2>Ingresar Datos del pedido</h2>
 
-<!--Bootstrap js-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="input-group mb-3" >
+      <span class="input-group-text" id="basic-addon1">Categoría</span>
+      <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+    </div>
 
-<script>
-  const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Estado</span>
+      <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+    </div>
 
-  const alert = (message, type) => {
-    const wrapper = document.createElement('div')
-    wrapper.innerHTML = [
-      `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-      `   <div>${message}</div>`,
-      '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-      '</div>'
-    ].join('')
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Fecha de entrega </span>
+      <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+    </div>
 
-    alertPlaceholder.append(wrapper)
-  }
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Obseervaciones</span>
+      <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+  </div>
+  <div id="liveAlertPlaceholder"></div>
+  <button type="button" class="btn btn-success" id="liveAlertBtn">Guardar</button>
 
-  const alertTrigger = document.getElementById('liveAlertBtn')
-  if (alertTrigger) {
-    alertTrigger.addEventListener('click', () => {
-      alert('Pedido registrado con éxito', 'success')
-    })
-  }
-</script>
+  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Cancelar
+  </button>
+
+  <!--Bootstrap js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+    const alert = (message, type) => {
+      const wrapper = document.createElement('div')
+      wrapper.innerHTML = [
+        `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+        `   <div>${message}</div>`,
+        '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+        '</div>'
+      ].join('')
+
+      alertPlaceholder.append(wrapper)
+    }
+
+    const alertTrigger = document.getElementById('liveAlertBtn')
+    if (alertTrigger) {
+      alertTrigger.addEventListener('click', () => {
+        alert('Pedido registrado con éxito', 'success')
+      })
+    }
+  </script>
 
 
 
