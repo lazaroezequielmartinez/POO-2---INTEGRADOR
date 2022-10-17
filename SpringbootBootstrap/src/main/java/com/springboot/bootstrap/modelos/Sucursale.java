@@ -33,6 +33,10 @@ public class Sucursale {
     @Column(name="altura")
     private String altura;
 
+    @ManyToOne
+    @JoinColumn(name="id_usuario")
+    private Usuario usuarios;
+
 
 }
 

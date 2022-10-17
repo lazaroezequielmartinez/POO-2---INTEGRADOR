@@ -26,4 +26,7 @@ public class Stock {
 
     @Column(name="cantidad")
     private Integer cantidad;
+    @ManyToOne
+    @JoinColumn(name="id_insumos")
+    private Insumo insumos;
 }

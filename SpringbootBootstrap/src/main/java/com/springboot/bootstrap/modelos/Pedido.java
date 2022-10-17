@@ -46,6 +46,7 @@ public class Pedido {
     private Usuario usuario;
 
 
+
     @ManyToMany
     @JoinTable(
             name = "pedido_tiene_insumos",

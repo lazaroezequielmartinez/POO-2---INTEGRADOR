@@ -23,6 +23,9 @@ public class Disenio {
     private String estado;
     @Column(name="tipo_disenio")
     private String tipo_disenio;
+    @ManyToOne
+    @JoinColumn(name="id-pedido")
+    private Pedido pedidos;
 
    /* @Basic
     @Column(name = "ciudad", length = 100)
