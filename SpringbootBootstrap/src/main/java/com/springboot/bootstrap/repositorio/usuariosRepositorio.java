@@ -1,7 +1,10 @@
 package com.springboot.bootstrap.repositorio;
 
-import com.springboot.bootstrap.modelos.Usuario;
-import org.springframework.data.repository.CrudRepository;
+import com.springboot.bootstrap.modelos.usuarios;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface usuariosRepositorio extends CrudRepository<Usuario, Integer> {
+@Repository
+public interface usuariosRepositorio extends JpaRepository<usuarios, Long>{
+
 }
