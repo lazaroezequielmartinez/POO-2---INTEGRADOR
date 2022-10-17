@@ -9,7 +9,9 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
-
+@Setter
+@Getter
+@NoArgsConstructor
 @Entity
 @Table(name = "stock")
 public class Stock {
