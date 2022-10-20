@@ -1,7 +1,7 @@
 package com.springboot.bootstrap.Controladores;
 
-import com.springboot.bootstrap.modelos.usuarios;
-import com.springboot.bootstrap.servicios.usuariosServicio;
+import com.springboot.bootstrap.modelos.Usuario;
+import com.springboot.bootstrap.servicios.UsuarioServicio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,27 +11,27 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
-public class usuariosControlador {
+public class UsuarioControlador {
 
     @Autowired
-    private usuariosServicio servicio;
+    private UsuarioServicio servicio;
 
     @GetMapping({ "/usuarios", })
     public String listarUsuarios(Model modelo) {
-        modelo.addAttribute("estudiantes", servicio.listarTodosLosUsuarios());
+        modelo.addAttribute("usuarios", servicio.listarTodosLosUsuarios());
         return "/pages/usuarios"; // nos retorna al archivo estudiantes
     }
 
     @GetMapping("/usuarios/nuevo")
     public String mostrarFormularioRegistrarUsuario(Model modelo) {
-        usuarios usuarios = new usuarios();
-        modelo.addAttribute("usuarios", usuarios);
+        Usuario Usuario = new Usuario();
+        modelo.addAttribute("usuarios", Usuario);
         return "/pages/crear_usuarios";
     }
 
     @PostMapping("/usuarios")
-    public String guardarUsuario(@ModelAttribute("usuarios") usuarios usuarios) {
-        servicio.guardarUsuario(usuarios);
+    public String guardarUsuario(@ModelAttribute("usuarios") Usuario Usuario) {
+        servicio.guardarUsuario(Usuario);
         return "redirect:/usuarios";
     }
 
@@ -42,16 +42,16 @@ public class usuariosControlador {
     }
 
     @PostMapping("/usuarios/{id}")
-    public String actualizarUsuario(@PathVariable Long id, @ModelAttribute("usuarios") usuarios usuarios,
+    public String actualizarUsuario(@PathVariable Long id, @ModelAttribute("usuarios") Usuario Usuario,
                                     Model modelo) {
-        usuarios usuariosExistente = servicio.obtenerUsuarioPorId(id);
+        Usuario usuariosExistente = servicio.obtenerUsuarioPorId(id);
         usuariosExistente.setId(id);
-        usuariosExistente.setDni(usuarios.getDni());
-        usuariosExistente.setNombre(usuarios.getNombre());
-        usuariosExistente.setApellido(usuarios.getApellido());
-        usuariosExistente.setTelefono(usuarios.getTelefono());
-        usuariosExistente.setDireccion(usuarios.getDireccion());
-        usuariosExistente.setEmail(usuarios.getEmail());
+        usuariosExistente.setDni(Usuario.getDni());
+        usuariosExistente.setNombre(Usuario.getNombre());
+        usuariosExistente.setApellido(Usuario.getApellido());
+        usuariosExistente.setTelefono(Usuario.getTelefono());
+        usuariosExistente.setDireccion(Usuario.getDireccion());
+        usuariosExistente.setEmail(Usuario.getEmail());
 
         servicio.actualizarUsuario(usuariosExistente);
         return "redirect:/usuarios";

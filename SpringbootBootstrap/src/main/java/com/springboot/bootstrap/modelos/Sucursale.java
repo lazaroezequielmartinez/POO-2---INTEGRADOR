@@ -35,7 +35,7 @@ public class Sucursale {
 
     @ManyToOne
     @JoinColumn(name="id_usuario")
-    private com.springboot.bootstrap.modelos.usuarios usuarios;
+    private Usuario Usuario;
 
 
 }

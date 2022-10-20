@@ -43,7 +43,7 @@ public class Pedido {
 
     @ManyToOne
     @JoinColumn(name = "id_usuario")
-    private usuarios usuarios;
+    private Usuario Usuario;
 
 
 
