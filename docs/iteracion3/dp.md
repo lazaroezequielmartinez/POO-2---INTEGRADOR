@@ -1,5 +1,11 @@
 # Trabajo en equipo
-![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/grupo%20de%20trabajo%20I2.jpeg)
+
+#### Sosa Ayelen: Tareas
+#### Ramirez Silvia: Wireframe y Casos de uso
+#### Martinez Lazaro Ezequiel: Wireframe y Casos de uso
+#### Duarte Laura: Wireframe y Casos de uso
+#### Carlos Pereyra: UML - Modelo
+#### Luciano Lopez: UML 
 
 # Diseño OO
 
