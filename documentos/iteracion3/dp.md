@@ -85,6 +85,3 @@
 - Para consultar estado de diseño debo ser encargado de impresión, tener sesión iniciada
 - Para modificar estado de diseño debo ser encargado de impresión, tener sesión iniciada
 - Para solicitar un informe de clientes habituales debo ser administrador y encargado de impresión para tener un informe de los clientes habituales de los ultimos 30 dias, tener sesión iniciada
-
-# Retrospectiva
-Como se ha podido observar en la iteración 2,  han ocurrido grandes actualizaciones de codigo enfocado en el backend del sistema, sin embargo todavía no se han cumplido las metas establecidas tanto del backend como del frontend. A pesar de todo, se logró un crud completo para el registro de usuarios del sistema, creemos que a partir de ahora el crecimiento del proyecto o la escala del mismo crecerá exponencialmente. Nuestra nueva forma de trabajar, ha dado muy buenos resultados en el desarrollo ágil del sistema, por el cual seguiremos implementando este método de trabajo. Creemos que todos estos avances nos permitirán entregar para la siguiente iteración (Nro 3), un proyecto mucho más completo y a gran escala.
