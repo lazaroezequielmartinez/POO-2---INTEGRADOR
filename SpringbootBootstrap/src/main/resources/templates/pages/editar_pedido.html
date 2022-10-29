@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="utf-8">
-<title>Registro de clientes</title>
+<title>Editar pedido</title>
 <!-- CSS only -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
@@ -45,40 +45,30 @@
     <div class="container">
        <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
-              <h1 class="text-center">Registro de clientes</h1>
+              <h1 class="text-center">Edición de pedido</h1>
               <div class="card-body">
-                 <form th:action="@{/usuarios}" th:object="${usuarios}" method="POST">
+                 <form th:action="@{/pedidos/{id}(id=${pedidos.id})}" th:object="${pedidos}" method="POST">
 
                      <div class="form-group">
-                         <label>DNI : </label>
-                         <input type="text" name="dni" th:field="*{dni}" class="form-control" placeholder="Digite su DNI : " required>
+                       <label>Categoria : </label>
+                       <input type="text" name="nombre" th:field="*{categoria}" class="form-control" placeholder="Digite su nombre : " required>
+                    </div>
+
+                     <div class="form-group">
+                         <label>Estado : </label>
+                         <input type="text" name="estado" th:field="*{estado}" class="form-control" placeholder="Digite el estado del pedido : " required>
                      </div>
 
+                     <div class="form-group">
+                       <label>Fecha de pedido : </label>
+                       <input type="text" name="apellido" th:field="*{fechapedido}" class="form-control" placeholder="Digite su apellido : " required>
+                    </div>
+
                     <div class="form-group">
-                       <label>Nombre : </label>
-                       <input type="text" name="nombre" th:field="*{nombre}" class="form-control" placeholder="Digite su nombre : " required>
+                       <label>Observaciones : </label>
+                       <input type="text" name="email" th:field="*{observaciones}" class="form-control" placeholder="Digite su email : " required>
                     </div>
                     
-                    <div class="form-group">
-                       <label>Apellido : </label>
-                       <input type="text" name="apellido" th:field="*{apellido}" class="form-control" placeholder="Digite su apellido : " required>
-                    </div>
-
-                     <div class="form-group">
-                         <label>Teléfono : </label>
-                         <input type="text" name="telefono" th:field="*{telefono}" class="form-control" placeholder="Digite su teléfono : " required>
-                     </div>
-
-                     <div class="form-group">
-                         <label>Dirección : </label>
-                         <input type="text" name="direccion" th:field="*{direccion}" class="form-control" placeholder="Digite su dirección : " required>
-                     </div>
-
-                    <div class="form-group">
-                       <label>Email : </label>
-                       <input type="email" name="email" th:field="*{email}" class="form-control" placeholder="Digite su email : " required>
-                    </div>
-
                     <div class="box-footer">
                        <button class="btn btn-success">Guardar</button>
                     </div>

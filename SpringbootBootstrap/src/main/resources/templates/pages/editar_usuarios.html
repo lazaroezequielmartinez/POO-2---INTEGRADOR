@@ -8,17 +8,37 @@
 </head>
 <body>
 
-
-	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-		<a class="navbar-brand" href="#"> Control de clientes</a>
-		<!-- Navbar links -->
-		<div class="collapse navbar-collapse" id="collapsibleNavbar">
-			<ul class="navbar-nav">
-				<li class="nav-item"><a class="nav-link"
-					th:href="@{/usuarios}">Control de clientes</a></li>
-			</ul>
-		</div>
-	</nav>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="/images/LogoMinerva.png" alt="LogoMinerva" width="90px" th:action="@{/AtenPubRegCli}" method="post"/>
+        </a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+                <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                >Atencion al Público</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Registrar Cliente</a></li>
+                    <li><a class="dropdown-item" href="#">Consultar Cliente</a></li>
+                    <li><a class="dropdown-item" href="#">Registrar Pedidos</a></li>
+                    <li><a class="dropdown-item" href="#">Consultar Pedidos</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                        <a class="dropdown-item" href="#">Configuraciones</a>
+                        <a class="dropdown-item" href="#">Salir</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- End -->
 
     <br>
     <div class="container">

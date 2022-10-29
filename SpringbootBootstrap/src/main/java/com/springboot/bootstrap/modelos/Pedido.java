@@ -1,51 +1,102 @@
 
 package com.springboot.bootstrap.modelos;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+
 
 import javax.persistence.*;
-import java.util.Date;
+
 import java.util.List;
 
-@Setter
-@Getter
-@NoArgsConstructor
+
 @Entity
-@Table(name = "pedidosMinerva")
+@Table(name = "pedidos")
 public class Pedido {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_pedidos", nullable = false)
-    private Integer id;
+    private Long id;
 
-    @Column(name="tipo", nullable = false, length = 45)
-    private String tipo;
+    @Column(name = "categoria",nullable = false,length = 50)
+    private String categoria;
 
-    @Column(name="cantidad", nullable = false, length = 200)
-    private Integer cantidad;
+    @Column(name = "fechapedido",nullable = false,length = 50)
+    private String fechapedido;
 
-    @Column(name="nombre_cliente", nullable = false, length = 45)
-    private String nombre_cliente;
+    @Column(name = "estado",nullable = false,length = 50)
+    private String estado;
 
-    @Column(name="telefono", nullable = false, length = 45)
-    private String telefono;
+    @Column(name = "observaciones",nullable = false,length = 50,unique = true)
+    private String observaciones;
 
-    @Column(name="fecha_pedido", nullable = false)
-    private Date fecha_pedido;
+    public Pedido() {
 
-    @Column(name="fecha_entrega", nullable = false)
-    private Date fecha_entrega;
+    }
 
-    @Column(name="presupuesto", nullable = false)
-    private Float presupuesto;
+    public Pedido(Long id, String categoria, String fechapedido, String estado, String observaciones) {
+        this.id = id;
+        this.categoria = categoria;
+        this.fechapedido = fechapedido;
+        this.estado = estado;
+        this.observaciones = observaciones;
+    }
 
-    @ManyToOne
-    @JoinColumn(name = "id_usuario")
-    private Usuario Usuario;
+    public Pedido(String categoria, String fechapedido, String estado, String observaciones) {
+        this.categoria = categoria;
+        this.fechapedido = fechapedido;
+        this.estado = estado;
+        this.observaciones = observaciones;
+    }
 
+    public Long getId() {
+        return id;
+    }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
+    public String getFechapedido() {
+        return fechapedido;
+    }
+
+    public void setFechapedido(String fechapedido) {
+        this.fechapedido = fechapedido;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    public String getObservaciones() {
+        return observaciones;
+    }
+
+    public void setObservaciones(String observaciones) {
+        this.observaciones = observaciones;
+    }
+
+    @Override
+    public String toString() {
+        return "Pedido{" +
+                "id=" + id +
+                ", categoria='" + categoria + '\'' +
+                ", fechapedido='" + fechapedido + '\'' +
+                ", estado='" + estado + '\'' +
+                ", observaciones='" + observaciones + '\'' +
+                '}';
+    }
 
     @ManyToMany
     @JoinTable(

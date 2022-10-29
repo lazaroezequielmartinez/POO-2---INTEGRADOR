@@ -15,4 +15,11 @@ public class LoginControlador {
     public String loginSubmit(){
         return "/pages/AtenPubPrin";
     }
+
+    @RequestMapping("/Roles")
+    public String Roles() {return "/pages/Roles";}
+
+    @RequestMapping("/RolesError")
+    public String RolesError() {return "/pages/RolesError";}
+
 }
