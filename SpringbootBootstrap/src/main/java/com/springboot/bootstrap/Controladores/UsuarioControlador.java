@@ -19,7 +19,7 @@ public class UsuarioControlador {
     @GetMapping({ "/usuarios", })
     public String listarUsuarios(Model modelo) {
         modelo.addAttribute("usuarios", servicio.listarTodosLosUsuarios());
-        return "/pages/usuarios"; // nos retorna al archivo estudiantes
+        return "/pages/usuarios"; // nos retorna al archivo
     }
 
     @GetMapping("/usuarios/nuevo")
@@ -35,7 +35,7 @@ public class UsuarioControlador {
         return "redirect:/usuarios";
     }
 
-    @GetMapping("/usuarios/editar/{id}")
+    @GetMapping("/usuarios/editar/{id}")// el id no se puede modificar en nungun caso
     public String mostrarFormularioDeEditar(@PathVariable Long id, Model modelo) {
         modelo.addAttribute("usuarios", servicio.obtenerUsuarioPorId(id));
         return "/pages/editar_usuarios";

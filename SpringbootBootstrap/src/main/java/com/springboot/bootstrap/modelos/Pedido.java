@@ -3,6 +3,9 @@ package com.springboot.bootstrap.modelos;
 
 
 
+import com.sun.istack.NotNull;
+import org.springframework.validation.annotation.Validated;
+
 import javax.persistence.*;
 
 import java.util.List;
@@ -14,18 +17,24 @@ public class Pedido {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @NotNull
+
     private Long id;
 
     @Column(name = "categoria",nullable = false,length = 50)
+    @NotNull
     private String categoria;
 
     @Column(name = "fechapedido",nullable = false,length = 50)
+    @NotNull
     private String fechapedido;
 
     @Column(name = "estado",nullable = false,length = 50)
+    @NotNull
     private String estado;
 
     @Column(name = "observaciones",nullable = false,length = 50,unique = true)
+
     private String observaciones;
 
     public Pedido() {
@@ -50,7 +59,7 @@ public class Pedido {
     public Long getId() {
         return id;
     }
-
+// ver los set no van ya que no se debe permitir  cambiar
     public void setId(Long id) {
         this.id = id;
     }
@@ -68,22 +77,26 @@ public class Pedido {
     }
 
     public void setFechapedido(String fechapedido) {
+
         this.fechapedido = fechapedido;
     }
-
+    // no  combiare pero recorda  que los get y set no va en las id
     public String getEstado() {
         return estado;
     }
 
     public void setEstado(String estado) {
+
         this.estado = estado;
     }
 
     public String getObservaciones() {
+
         return observaciones;
     }
 
     public void setObservaciones(String observaciones) {
+
         this.observaciones = observaciones;
     }
 
