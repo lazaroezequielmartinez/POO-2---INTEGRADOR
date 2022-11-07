@@ -3,6 +3,7 @@
 
 package com.springboot.bootstrap.modelos;
 
+import com.sun.istack.NotNull;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -18,9 +19,10 @@ public class Stock {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @NotNull
     @Column(name = "id_stock")
     private Integer id;
-
+    @NotNull
     @Column(name="pedido")
     private Integer pedidos;
 
