@@ -1,6 +1,6 @@
 # Trabajo en equipo
 
-#### Sosa Ayelen: Tareas
+#### Sosa Ayelen: Wireframe y Casos de uso
 #### Ramirez Silvia: Wireframe y Casos de uso
 #### Martinez Lazaro Ezequiel: Wireframe y Casos de uso
 #### Duarte Laura: Wireframe y Casos de uso
