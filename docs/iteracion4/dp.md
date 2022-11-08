@@ -1,6 +1,6 @@
 # Trabajo en equipo
 
-#### Sosa Ayelen: Tareas
+#### Sosa Ayelen: Wireframe y Casos de uso
 #### Ramirez Silvia: Wireframe y Casos de uso
 #### Martinez Lazaro Ezequiel: Wireframe y Casos de uso
 #### Duarte Laura: Wireframe y Casos de uso
@@ -97,7 +97,14 @@
 5. El usuario presiona el boton _Imprimir_.
 6. El sistema inicia la impresión del informe.
 
+
 ---
+# Backlog de iteración 4
+
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/TableroProyectoIteracion4-Inicial.JPG)
+
+
+
 # Tareas
 ## Lista para esta iteración:
 - Para poder realizar estas actividades es necesario tener la base de datos creada y su funcionamiento.
