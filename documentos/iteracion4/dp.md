@@ -15,7 +15,6 @@
 ## En esta iteración, abarcaremos unicamente los casos de uso con sus correspondientes wireframes respectivos a los roles del diseñador gráfico y administrador.  
 
 ---
-
 **CU: Visualizar pedido.**
 
 ![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/18_CU_Vis_Ped.JPG)
@@ -50,7 +49,53 @@
 
 6. El usuario  presiona el boton _Cancelar_.
 7. El sistema verifica que el usuario cancela la acción de modificar estado del pedido y finaliza el caso de uso.
+---
+**CU: Solicitar informe de ventas**
 
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/21_CU_Inform_Ventas.JPG)
+
+**Actores:** Administrador.
+1. Este caso de uso inicia cuando el usuario desee obtener un informe de las ventas semanales.
+2. El usuario se encuentra en la pantalla de _Inicio_.
+3. El usuario presiona el boton de _Informe de ventas_ 
+4. El sistema muestra un informe y graficos de las ventas realizadas en la semana. 
+
+**Curso alternativo**
+
+5. El usuario presiona el boton _Imprimir_.
+6. El sistema inicia la impresión del informe.
+
+---
+**CU: Solicitar informe de stock**
+
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/23_CU_Inform_Ventas.JPG)
+
+**Actores:** Administrador.
+1. Este caso de uso inicia cuando el usuario desee obtener un informe de stock.
+2. El usuario se encuentra en la pantalla de _Inicio_.
+3. El usuario presiona el boton de _Informe de stock_ 
+4. El sistema muestra un informe de los materiales en stock y los utilizados en la semana. 
+
+**Curso alternativo**
+
+5. El usuario presiona el boton _Imprimir_.
+6. El sistema inicia la impresión del informe.
+---
+**CU: Solicitar informe de clientes habituales**
+
+![](https://github.com/lazaroezequielmartinez/POO-2---INTEGRADOR/blob/main/Imagenes/24_CU_Inform_Ventas.JPG)
+
+**Actores:** Administrador y encargado de impresión.
+
+1. Este caso de uso inicia cuando el usuario desee obtener un informe de clientes habituales de los ultimos 30 días.
+2. El usuario se encuentra en la pantalla de _Inicio_.
+3. El usuario presiona el boton de _Informe de cientes habituales_ 
+4. El sistema muestra un informe de los clientes habituales en los ultimos 30 días. 
+
+**Curso alternativo**
+
+5. El usuario presiona el boton _Imprimir_.
+6. El sistema inicia la impresión del informe.
 
 ---
 # Tareas
