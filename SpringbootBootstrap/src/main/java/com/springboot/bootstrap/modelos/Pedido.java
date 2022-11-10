@@ -27,7 +27,7 @@ public class Pedido {
 
     @Column(name = "fechapedido",nullable = false,length = 50)
     @NotNull
-    private String fechapedido;
+    private String fechapedido = "2022-01_12";
 
     @Column(name = "estado",nullable = false,length = 50)
     @NotNull
