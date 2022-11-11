@@ -1,6 +1,4 @@
 
-//Anotacion: Para esta iteraciòn solamente se utilizaran los modelos usuarios y pedidos
-
 package com.springboot.bootstrap.modelos;
 
 import lombok.Getter;
@@ -32,5 +30,8 @@ public class Insumo {
 
     @Column(name="cantidad")
     private Integer cantidad;
+
+    @Column(name="costo")
+    private Double costo;
 
 }

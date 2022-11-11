@@ -22,8 +22,5 @@ public class LoginControlador {
     @RequestMapping("/RolesError")
     public String RolesError() {return "/pages/RolesError";}
 
-    @RequestMapping("/configAdmin")
-    public String configAdmin(){return"/pages/configAdmin";}
-
 
 }

@@ -15,4 +15,6 @@ public interface UsuarioServicio {
     public Usuario actualizarUsuario(Usuario usuario);
 
     public void eliminarUsuario(Long id);
+
+    List<Usuario> findByNombre(String nombre);
 }

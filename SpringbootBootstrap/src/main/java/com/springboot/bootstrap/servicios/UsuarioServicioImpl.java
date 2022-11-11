@@ -44,4 +44,9 @@ public class UsuarioServicioImpl implements UsuarioServicio {
 
     }
 
+    @Override
+    public List<Usuario> findByNombre(String nombre) {
+        return findByNombre(nombre);
+    }
+
 }
