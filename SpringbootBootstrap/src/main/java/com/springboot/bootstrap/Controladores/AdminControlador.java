@@ -11,4 +11,9 @@ public class AdminControlador {
         return "/pages/configAdmin";
     }
 
+    @RequestMapping("/AdminInformeVentas")
+    public String AdminInformeVentas(){
+        return "/pages/AdminInformeVentas";
+    }
+
 }
