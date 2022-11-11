@@ -23,7 +23,7 @@ public class AtenPubConfControlador {
         return "/pages/AtenPubRegPed";}
 
     @RequestMapping("/AtenPubConPed")
-    public String consulPed(){
+    public String consultarPedido(){
         return "/pages/AtenPubConPed";}
 
 }
