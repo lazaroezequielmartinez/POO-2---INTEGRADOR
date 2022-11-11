@@ -9,4 +9,9 @@ public class configDiseñadorGrafico {
     @RequestMapping("/configDiseñador")
     public String configDiseñador() {return "/pages/configDiseñadorGrafico";}
 
+    @RequestMapping("/DisGrafVisPedido")
+    public String DisGrafVisPedido() {return "/pages/DisGrafVisPedido";}
+
+    @RequestMapping("/DisGrafModifPedido")
+    public String DisGrafModifPedido() {return "/pages/DisGrafModifPedido";}
 }
