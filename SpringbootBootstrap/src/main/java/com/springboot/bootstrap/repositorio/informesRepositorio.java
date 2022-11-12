@@ -1,5 +1,8 @@
 /*
 package com.springboot.bootstrap.repositorio;
+package com.springboot.bootstrap.repositorio;
+package com.springboot.bootstrap.repositorio;
+
 
 import com.springboot.bootstrap.modelos.Informes;
 import org.springframework.data.repository.CrudRepository;
