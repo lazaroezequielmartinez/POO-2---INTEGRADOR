@@ -31,4 +31,5 @@ public class Stock {
     @ManyToOne
     @JoinColumn(name="id_insumos")
     private Insumo insumos;
+
 }
