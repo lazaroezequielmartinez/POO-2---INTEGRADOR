@@ -4,6 +4,7 @@ package com.springboot.bootstrap.modelos;
 
 
 import com.sun.istack.NotNull;
+import com.sun.istack.Nullable;
 import org.springframework.validation.annotation.Validated;
 
 import javax.persistence.*;
@@ -18,54 +19,77 @@ public class Pedido {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @NotNull
-
     private Long id;
 
-    @Column(name = "categoria",nullable = false,length = 50)
-    @NotNull
+    @Column(name = "categoria", length = 50)
+    @Nullable
     private String categoria;
 
-    @Column(name = "fechapedido",nullable = false,length = 50)
-    @NotNull
-    private String fechapedido = "2022-01_12";
+    @Column(name = "dni", length = 50)
+    @Nullable
+    private Integer dni;
 
-    @Column(name = "estado",nullable = false,length = 50)
-    @NotNull
+    @Column(name = "fechapedido", length = 50)
+    @Nullable
+    private String fechapedido;
+
+    @Column(name = "estado", length = 50)
+    @Nullable
     private String estado;
 
-    @Column(name = "observaciones",nullable = false,length = 50,unique = true)
-
+    @Column(name = "observaciones", length = 240)
+    @Nullable
     private String observaciones;
 
     public Pedido() {
 
     }
 
-    public Pedido(Long id, String categoria, String fechapedido, String estado, String observaciones) {
+    public Pedido(Long id, String categoria, Integer dni, String fechapedido, String estado, String observaciones, List<Insumo> insumos) {
         this.id = id;
         this.categoria = categoria;
+        this.dni = dni;
         this.fechapedido = fechapedido;
         this.estado = estado;
         this.observaciones = observaciones;
+        this.insumos = insumos;
     }
 
-    public Pedido(String categoria, String fechapedido, String estado, String observaciones) {
+    public Pedido(String categoria, Integer dni, String fechapedido, String estado, String observaciones, List<Insumo> insumos) {
         this.categoria = categoria;
+        this.dni = dni;
         this.fechapedido = fechapedido;
         this.estado = estado;
         this.observaciones = observaciones;
+        this.insumos = insumos;
     }
 
     public Long getId() {
         return id;
     }
-// ver los set no van ya que no se debe permitir  cambiar
+    // ver los set no van ya que no se debe permitir  cambiar
     public void setId(Long id) {
         this.id = id;
     }
 
     public String getCategoria() {
         return categoria;
+    }
+
+    public Integer getDni() {
+        return dni;
+    }
+
+    public void setDni(Integer dni) {
+        this.dni = dni;
+    }
+
+    public List<Insumo> getInsumos() {
+        return insumos;
+    }
+
+    public void setInsumos(List<Insumo> insumos) {
+        this.insumos = insumos;
     }
 
     public void setCategoria(String categoria) {
@@ -105,9 +129,11 @@ public class Pedido {
         return "Pedido{" +
                 "id=" + id +
                 ", categoria='" + categoria + '\'' +
+                ", dni=" + dni +
                 ", fechapedido='" + fechapedido + '\'' +
                 ", estado='" + estado + '\'' +
                 ", observaciones='" + observaciones + '\'' +
+                ", insumos=" + insumos +
                 '}';
     }
 

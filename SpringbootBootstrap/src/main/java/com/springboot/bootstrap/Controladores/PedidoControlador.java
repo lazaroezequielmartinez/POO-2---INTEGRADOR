@@ -44,14 +44,12 @@ public class PedidoControlador {
 
 	@PostMapping("/pedidos/{id}")
 	public String actualizarPedido(@PathVariable Long id, @ModelAttribute("pedidos") Pedido pedido,
-			Model modelo) {
+								   Model modelo) {
 		Pedido pedidoExistente = servicio.obtenerPedidoPorId(id);
 		pedidoExistente.setId(id);
 		pedidoExistente.setCategoria(pedido.getCategoria());
-		pedidoExistente.setEstado(pedido.getEstado());
 		pedidoExistente.setFechapedido(pedido.getFechapedido());
 		pedidoExistente.setObservaciones(pedido.getObservaciones());
-
 		servicio.actualizarPedido(pedidoExistente);
 		return "redirect:/pedidos";
 	}

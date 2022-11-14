@@ -22,7 +22,7 @@
                         role="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
-                >Atencion al Público</a>
+                >Encargado de Impresión</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#">Registrar Cliente</a></li>
                     <li><a class="dropdown-item" href="#">Consultar Cliente</a></li>
@@ -43,14 +43,17 @@
 
 <div class="container">
     <div class="row">
-        <h1>Lista de pedidos</h1>
+        <h1>Visualización de Pedidos</h1>
     </div>
+    <b>
+    </b>
+    <h4>Cambiar estado de impresión</h4>
     <br>
     <table class="table table-striped table-bordered">
         <thead class="table-dark">
         <tr>
-            <th>Cod cliente</th>
             <th>ID Pedido</th>
+            <th>Cod cliente</th>
             <th>Categoria</th>
             <th>Estado</th>
             <th>Fecha de pedido</th>
@@ -60,15 +63,14 @@
         </thead>
         <tbody>
         <tr th:each="pedido : ${pedidos}">
-            <td th:text="${usuario.id}">Cod cliente</td>
             <td th:text="${pedido.id}">ID Pedido</td>
+            <td th:text="${pedido.dni}">Cod cliente</td>
             <td th:text="${pedido.categoria}">Categoria</td>
             <td th:text="${pedido.estado}">Estado</td>
             <td th:text="${pedido.fechapedido}">Fecha de entrega</td>
             <td th:text="${pedido.observaciones}">Observaciones</td>
             <td>
-                <a th:href="@{/pedidos/editar/{id}(id=${pedido.id})}" class="btn btn-info">Editar</a>
-                <a th:href="@{/pedidos/{id}(id=${pedido.id})}" class="btn btn-danger">Eliminar</a>
+                <a th:href="@{/pedidos_enc_impresion/editar/{id}(id=${pedido.id})}" class="btn btn-warning">Modificar estado de impresión</a>
             </td>
         </tr>
         </tbody>

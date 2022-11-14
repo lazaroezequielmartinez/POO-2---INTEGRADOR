@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <title>Editar pedido</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="/images/LogoMinerva.png" alt="LogoMinerva" width="90px" th:action="@{/AtenPubRegCli}" method="post"/>
+    </a>
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item dropdown">
+        <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+        >Encargado de impresión</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">Registrar Cliente</a></li>
+          <li><a class="dropdown-item" href="#">Consultar Cliente</a></li>
+          <li><a class="dropdown-item" href="#">Registrar Pedidos</a></li>
+          <li><a class="dropdown-item" href="#">Consultar Pedidos</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li>
+            <a class="dropdown-item" href="#">Configuraciones</a>
+            <a class="dropdown-item" href="#">Salir</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- End -->
+
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
+      <h3 class="text-center">Cambiar estado del pedido</h3>
+      <div class="card-body">
+
+        <form th:action="@{/pedidos_enc_impresion/{id}(id=${pedidos.id})}" th:object="${pedidos}" method="POST">
+
+          <div class="form-group">
+            <label>Digite </label>
+            <input type="text" name="estado" th:field="*{estado}" class="form-control" placeholder ="No iniciado - En proceso - Finalizado" required>
+          </div>
+
+          <div class="box-footer">
+            <button class="btn btn-success">Guardar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

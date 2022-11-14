@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
-    <title>Modificar Pedido</title>
+    <title>Modificar estado del pedido</title>
     <!-- CSS only -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
@@ -22,9 +22,9 @@
                         role="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
-                >Diseñador Gráfico</a>
+                >Diseñador gráfico</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#"></a></li>
+                    <li><a class="dropdown-item" href="#">Registrar Cliente</a></li>
                     <li><a class="dropdown-item" href="#">Consultar Cliente</a></li>
                     <li><a class="dropdown-item" href="#">Registrar Pedidos</a></li>
                     <li><a class="dropdown-item" href="#">Consultar Pedidos</a></li>
@@ -43,34 +43,34 @@
 
 <div class="container">
     <div class="row">
-        <h1>Modificar Pedido</h1>
+        <h1>Editar datos cargados en el sistema</h1>
     </div>
-
+    <b>
+    </b>
+    <h4>Cambiar estado de impresión</h4>
     <br>
     <table class="table table-striped table-bordered">
         <thead class="table-dark">
         <tr>
-            <th>Cod_pedido</th>
-            <th>Cod_cliente</th>
-            <th>Categoría</th>
+            <th>ID Pedido</th>
+            <th>Cod cliente</th>
+            <th>Categoria</th>
             <th>Estado</th>
-            <th>Fecha de entrega</th>
+            <th>Fecha de pedido</th>
             <th>Observaciones</th>
-
+            <th>Acciones</th>
         </tr>
         </thead>
         <tbody>
         <tr th:each="pedido : ${pedidos}">
-            <td th:text="${pedido.id}">Cod_pedido</td>
-            <td th:text="${pedido.categoria}">Cod_cliente</td>
-            <td th:text="${pedido.estado}">Categoría</td>
-            <td th:text="${pedido.fechapedido}">Estado</td>
-            <td th:text="${pedido.fechaentrega}">Fecha de entrega</td>
-            <td th:text="${pedido.obsevaciones}">Observaciones</td>
+            <td th:text="${pedido.id}">ID Pedido</td>
+            <td th:text="${pedido.dni}">Cod cliente</td>
+            <td th:text="${pedido.categoria}">Categoria</td>
+            <td th:text="${pedido.estado}">Estado</td>
+            <td th:text="${pedido.fechapedido}">Fecha de entrega</td>
+            <td th:text="${pedido.observaciones}">Observaciones</td>
             <td>
-
-                <a th:href="@{/pedidos/editar/{id}(id=${pedido.id})}" class="btn btn-info">Editar</a>
-
+                <a th:href="@{/pedidos/editar/{id}(id=${pedido.id})}" class="btn btn-warning">Modificar estado de impresión</a>
             </td>
         </tr>
         </tbody>
