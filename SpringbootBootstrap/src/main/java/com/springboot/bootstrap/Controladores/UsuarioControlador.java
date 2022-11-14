@@ -19,7 +19,7 @@ public class UsuarioControlador {
     @GetMapping({ "/usuarios", })
     public String listarUsuarios(Model modelo) {
         modelo.addAttribute("usuarios", servicio.listarTodosLosUsuarios());
-        return "/pages/usuarios"; // nos retorna al archivo
+        return "/pages/usuarios";
     }
 
     @GetMapping("/usuarios/nuevo")

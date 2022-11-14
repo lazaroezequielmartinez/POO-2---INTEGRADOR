@@ -22,12 +22,14 @@ public class Stock {
     @NotNull
     @Column(name = "id_stock")
     private Integer id;
+
     @NotNull
     @Column(name="pedido")
     private Integer pedidos;
 
     @Column(name="cantidad")
     private Integer cantidad;
+
     @ManyToOne
     @JoinColumn(name="id_insumos")
     private Insumo insumos;

@@ -43,19 +43,21 @@
 
 <div class="container">
     <div class="row">
-        <h1>Visualización de Pedidos</h1>
+        <h1>Consulta de Pedidos</h1>
     </div>
     <b>
     </b>
     <h4>Cambiar estado de impresión</h4>
-    <br>
+    <h5>Puede modificar o actualizar el estado de un pedido</h5>
+    <b>
+    </b>
     <table class="table table-striped table-bordered">
         <thead class="table-dark">
         <tr>
             <th>ID Pedido</th>
             <th>Cod cliente</th>
             <th>Categoria</th>
-            <th>Estado</th>
+            <th>Estado de diseño</th>
             <th>Fecha de pedido</th>
             <th>Observaciones</th>
             <th>Acciones</th>
@@ -65,7 +67,7 @@
         <tr th:each="pedido : ${pedidos}">
             <td th:text="${pedido.id}">ID Pedido</td>
             <td th:text="${pedido.dni}">Cod cliente</td>
-            <td th:text="${pedido.categoria}">Categoria</td>
+            <td th:text="${pedido.categoria}">Estado de diseño</td>
             <td th:text="${pedido.estado}">Estado</td>
             <td th:text="${pedido.fechapedido}">Fecha de entrega</td>
             <td th:text="${pedido.observaciones}">Observaciones</td>
@@ -75,6 +77,9 @@
         </tr>
         </tbody>
     </table>
+
+    <a th:href="@{/}" class="btn btn-info">Consultar insumos en stock</a>
+
 </div>
 </body>
 </html>

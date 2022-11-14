@@ -26,7 +26,24 @@ public class Informe {
 
     @Column(name="descripcion")
     private String descripcion;
+
+    @Column(name="Lunes")
+    private String Lunes;
+
+    @Column(name="Martes")
+    private String Martes;
+
+    @Column(name="Miercoles")
+    private String Miercoles;
+
+    @Column(name="Jueves")
+    private String Jueves;
+
+    @Column(name="Viernes")
+    private String Viernes;
+
     @OneToOne
     @JoinColumn(name="id_pedido")
     private Pedido pedidos;
+
 }

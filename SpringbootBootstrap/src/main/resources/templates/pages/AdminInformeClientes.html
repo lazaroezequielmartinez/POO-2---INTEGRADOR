@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
-    <title>Visualizar Pedidos</title>
+    <title>Informe de Clientes</title>
     <!-- CSS only -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
@@ -22,9 +22,9 @@
                         role="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
-                >Encargado de Impresión</a>
+                >Administrador</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Registrar Cliente</a></li>
+                    <li><a class="dropdown-item" href="#"></a></li>
                     <li><a class="dropdown-item" href="#">Consultar Cliente</a></li>
                     <li><a class="dropdown-item" href="#">Registrar Pedidos</a></li>
                     <li><a class="dropdown-item" href="#">Consultar Pedidos</a></li>
@@ -43,40 +43,31 @@
 
 <div class="container">
     <div class="row">
-        <h1>Visualización de Pedidos</h1>
+        <h1>Informe de Clientes</h1>
     </div>
-    <b>
-    </b>
-    <h4>Enviar pedidos listos a impresión</h4>
-    <br>
-    </b>
-    <h5>Por cada fila, solo se activará el botón de "Iniciar impresión" cuando el pedido esté listo para imprimirse</h5>
+
     <br>
     <table class="table table-striped table-bordered">
         <thead class="table-dark">
         <tr>
-            <th>ID Pedido</th>
-            <th>Cod cliente</th>
-            <th>Categoria</th>
-            <th>Estado de diseño</th>
-            <th>Estado de impresión</th>
-            <th>Fecha de pedido</th>
-            <th>Observaciones</th>
-            <th>Acciones</th>
+            <th>Cod Cliente</th>
+            <th>DNI</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Teléfono</th>
+            <th>Dirección</th>
+            <th>Email</th>
         </tr>
         </thead>
         <tbody>
-        <tr th:each="pedido : ${pedidos}">
-            <td th:text="${pedido.id}">ID Pedido</td>
-            <td th:text="${pedido.dni}">Cod cliente</td>
-            <td th:text="${pedido.categoria}">Categoria</td>
-            <td th:text="${pedido.estado}">Estado de diseño</td>
-            <td th:text="${pedido.estado}">Estado de impresión</td>
-            <td th:text="${pedido.fechapedido}">Fecha de entrega</td>
-            <td th:text="${pedido.observaciones}">Observaciones</td>
-            <td>
-                <a th:href="@{/pedidos/editar/{id}(id=${pedido.id})}" class="btn btn-success">Iniciar impresión</a>
-            </td>
+        <tr th:each="usuarios : ${usuarios}">
+            <td th:text="${usuarios.id}">Cod Cliente</td>
+            <td th:text="${usuarios.dni}">DNI</td>
+            <td th:text="${usuarios.nombre}">Nombre</td>
+            <td th:text="${usuarios.apellido}">Apellido</td>
+            <td th:text="${usuarios.telefono}">Teléfono</td>
+            <td th:text="${usuarios.direccion}">Dirección</td>
+            <td th:text="${usuarios.email}">Email</td>
         </tr>
         </tbody>
     </table>

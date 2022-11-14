@@ -50,31 +50,26 @@
     <table class="table table-striped table-bordered">
         <thead class="table-dark">
         <tr>
-            <th>Cod_pedido</th>
+            <th>id_informe</th>
+            <th>estado</th>
+            <th>descripcion</th>
             <th>Lunes</th>
             <th>Martes</th>
             <th>Miércoles</th>
             <th>Jueves</th>
             <th>Viernes</th>
-            <th>Total</th>
-            <th>Proyectado</th>
-            <th>Diferencia</th>
-
         </tr>
         </thead>
         <tbody>
-        <tr th:each="pedido : ${pedidos}">
-            <td th:text="${pedido.id}">Cod_pedido</td>
-            <td th:text="${pedido.categoria}">Cod_cliente</td>
-            <td th:text="${pedido.estado}">Categoría</td>
-            <td th:text="${pedido.fechapedido}">Estado</td>
-            <td th:text="${pedido.fechaentrega}">Fecha de entrega</td>
-            <td th:text="${pedido.obsevaciones}">Observaciones</td>
-            <td>
-
-                <a th:href="@{/pedidos/editar/{id}(id=${pedido.id})}" class="btn btn-info">Editar</a>
-
-            </td>
+        <tr th:each="informe : ${informe}">
+            <td th:text="${informe.id}">id informe</td>
+            <td th:text="${informe.estado}">estado</td>
+            <td th:text="${informe.descripcion}">descripcion</td>
+            <td th:text="${informe.lunes}">lunes</td>
+            <td th:text="${informe.martes}">martes</td>
+            <td th:text="${informe.miercoles}">miercoles</td>
+            <td th:text="${informe.jueves}">jueves</td>
+            <td th:text="${informe.viernes}">viernes</td>
         </tr>
         </tbody>
     </table>
