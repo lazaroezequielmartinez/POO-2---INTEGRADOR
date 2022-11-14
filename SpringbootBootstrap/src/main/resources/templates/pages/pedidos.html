@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="utf-8">
-<title>Consultar pedidos</title>
-<!-- CSS only -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<title>Consultar pedidos</title>
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
 
@@ -41,41 +41,43 @@
 <!-- End -->
 
 
-	<div class="container">
-		<div class="row">
-			<h1>Lista de pedidos</h1>
-		</div>
-		<div class="row">
-		   <div class="col-lg-3">
-		     <a th:href="@{/pedidos/nuevo}" class="btn btn-primary btn-sm mb3">Agregar pedido</a>
-		   </div>
-		</div>
-		<br>
-		<table class="table table-striped table-bordered">
-			<thead class="table-dark">
-				<tr>
-					<th>ID Pedido</th>
-					<th>Categoria</th>
-					<th>Estado</th>
-					<th>Fecha de pedido</th>
-					<th>Observaciones</th>
-					<th>Acciones</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr th:each="pedido : ${pedidos}">
-					<td th:text="${pedido.id}">ID Pedido</td>
-					<td th:text="${pedido.categoria}">Categoria</td>
-					<td th:text="${pedido.estado}">Estado</td>
-					<td th:text="${pedido.fechapedido}">Fecha de pedido</td>
-					<td th:text="${pedido.observaciones}">Observaciones</td>
-					<td>
-					  <a th:href="@{/pedidos/editar/{id}(id=${pedido.id})}" class="btn btn-info">Editar</a>
-					  <a th:href="@{/pedidos/{id}(id=${pedido.id})}" class="btn btn-danger">Eliminar</a>
-					</td>
-				</tr>
-			</tbody>
-		</table>
+<div class="container">
+	<div class="row">
+		<h1>Lista de pedidos</h1>
 	</div>
+	<div class="row">
+		<div class="col-lg-3">
+			<a th:href="@{/pedidos/nuevo}" class="btn btn-primary btn-sm mb3">Agregar pedido</a>
+		</div>
+	</div>
+	<br>
+	<table class="table table-striped table-bordered">
+		<thead class="table-dark">
+		<tr>
+			<th>ID Pedido</th>
+			<th>DNI Cliente</th>
+			<th>Categoria</th>
+			<th>Estado</th>
+			<th>Fecha de pedido</th>
+			<th>Observaciones</th>
+			<th>Acciones</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr th:each="pedido : ${pedidos}">
+			<td th:text="${pedido.id}">ID Pedido</td>
+			<td th:text="${pedido.dni}">DNI Cliente</td>
+			<td th:text="${pedido.categoria}">Categoria</td>
+			<td th:text="${pedido.estado}">Estado</td>
+			<td th:text="${pedido.fechapedido}">Fecha de pedido</td>
+			<td th:text="${pedido.observaciones}">Observaciones</td>
+			<td>
+				<a th:href="@{/pedidos/editar/{id}(id=${pedido.id})}" class="btn btn-info">Editar</a>
+				<a th:href="@{/pedidos/{id}(id=${pedido.id})}" class="btn btn-danger">Eliminar</a>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+</div>
 </body>
 </html>
