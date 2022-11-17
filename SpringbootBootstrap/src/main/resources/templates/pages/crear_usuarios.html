@@ -7,18 +7,19 @@
 <title>Registro de clientes</title>
 <!-- CSS only -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/general.css"/>
 </head>
 <body>
 
-
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="/images/LogoMinerva.png" alt="LogoMinerva" width="90px" th:action="@{/AtenPubRegCli}" method="post"/>
+        <a class="navbar-brand" th:href="@{/index}" methods="get">
+            <img src="/images/LogoMinerva.png" alt="LogoMinerva" width="80px" />
         </a>
-
+        <h4>Registrar clientes al sistema</h4>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown" >
+
                 <a
                         class="nav-link dropdown-toggle"
                         href="#"
@@ -26,24 +27,26 @@
                         role="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
-
-                >Atencion al Público</a>
-
+                >Atención al Público</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Registrar Cliente</a></li>
-                    <li><a class="dropdown-item" href="#">Consultar Cliente</a></li>
-                    <li><a class="dropdown-item" href="#">Registrar Pedidos</a></li>
-                    <li><a class="dropdown-item" href="#">Consultar Pedidos</a></li>
+                    <li><a class="dropdown-item" th:href="@{/usuarios/nuevo}" methods="get" >Registrar Cliente</a></li>
+                    <li><a class="dropdown-item" th:href="@{/usuarios}" methods="get" >Consultar Cliente</a></li>
+                    <li><a class="dropdown-item" th:href="@{/pedidos/nuevo}" methods="get" >Registrar Pedidos</a></li>
+                    <li><a class="dropdown-item" th:href="@{/pedidos}" methods="get" >Consultar Pedidos</a></li>
                     <li><hr class="dropdown-divider" /></li>
                     <li>
-                        <a class="dropdown-item" href="#">Configuraciones</a>
+                        <a class="dropdown-item" th:href="@{/configAtenPub}" methods="get">Configuraciones</a>
                         <a class="dropdown-item" href="#">Salir</a>
                     </li>
                 </ul>
+
             </li>
         </ul>
     </div>
 </nav>
+<br>
+<br>
+<br>
 <!-- End -->
 
     <br>
@@ -56,32 +59,32 @@
 
                      <div class="form-group">
                          <label>DNI : </label>
-                         <input type="text" name="dni" th:field="*{dni}" class="form-control" placeholder="Digite su DNI : " required>
+                         <input type="text" name="dni" th:field="*{dni}" class="form-control" placeholder="Digite el DNI del cliente..." required>
                      </div>
 
                     <div class="form-group">
                        <label>Nombre : </label>
-                       <input type="text" name="nombre" th:field="*{nombre}" class="form-control" placeholder="Digite su nombre : " required>
+                       <input type="text" name="nombre" th:field="*{nombre}" class="form-control" placeholder="Digite el nombre..." required>
                     </div>
                     
                     <div class="form-group">
                        <label>Apellido : </label>
-                       <input type="text" name="apellido" th:field="*{apellido}" class="form-control" placeholder="Digite su apellido : " required>
+                       <input type="text" name="apellido" th:field="*{apellido}" class="form-control" placeholder="Digite el apellido..." required>
                     </div>
 
                      <div class="form-group">
                          <label>Teléfono : </label>
-                         <input type="text" name="telefono" th:field="*{telefono}" class="form-control" placeholder="Digite su teléfono : " required>
+                         <input type="text" name="telefono" th:field="*{telefono}" class="form-control" placeholder="Digite el teléfono..." required>
                      </div>
 
                      <div class="form-group">
                          <label>Dirección : </label>
-                         <input type="text" name="direccion" th:field="*{direccion}" class="form-control" placeholder="Digite su dirección : " required>
+                         <input type="text" name="direccion" th:field="*{direccion}" class="form-control" placeholder="Digite la dirección..." required>
                      </div>
 
                     <div class="form-group">
                        <label>Email : </label>
-                       <input type="email" name="email" th:field="*{email}" class="form-control" placeholder="Digite su email : " required>
+                       <input type="email" name="email" th:field="*{email}" class="form-control" placeholder="Digite el email..." required>
                     </div>
 
                     <div class="box-footer">
@@ -93,4 +96,5 @@
        </div>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </html>

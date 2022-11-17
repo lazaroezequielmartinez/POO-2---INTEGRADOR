@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Roles</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" th:href="@{/css/general.css}">
 </head>
 <body>
 
@@ -44,12 +44,22 @@
   </div>
 
     <div class="p-2">
-        <a class="h2" th:href="@{/configDiseñador}"> Diseñador Gráfico </a>
+        <a class="h2" th:href="@{/configDisenadorGrafico}"> Diseñador Gráfico </a>
     </div>
 
     <div class="p-2">
         <a class="h2" th:href="@{/configAdmin}"> Administrador </a>
     </div>
+
+    <form
+            class="login100-form validate-form p-b-33 p-t-5"
+            th:action="@{/index}"
+            method="get"
+    >
+        <div class="container-login100-form-btn m-t-32">
+            <button class="login100-form-btn" type="submit">Volver</button>
+        </div>
+    </form>
 
 </div>
 

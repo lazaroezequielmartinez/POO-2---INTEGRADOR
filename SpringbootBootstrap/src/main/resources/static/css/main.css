@@ -1,38 +1,29 @@
-
-*///////////////////////////////////////////////////////////////////
-[ FONT ]*/
-
-@font-face {
-  font-family: Ubuntu-Regular;
-  src: url('../fonts/ubuntu/Ubuntu-Regular.ttf'); 
-}
-
-@font-face {
-  font-family: Ubuntu-Bold;
-  src: url('../fonts/ubuntu/Ubuntu-Bold.ttf'); 
-}
-
-
-
-
-/*//////////////////////////////////////////////////////////////////
-[ RESTYLE TAG ]*/
-
 * {
 	margin: 0px; 
 	padding: 0px; 
 	box-sizing: border-box;
 }
 
+.fa-solid {
+  color: #d63384;
+  font-size: 35px;
+  text-align: center;
+  margin: 0 325px;
+}
+
 body, html {
 	height: 100%;
-	font-family: Ubuntu-Regular, sans-serif;
-  
+	font-family: Arial, sans-serif;
+    background-image: url("/images/bg-01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .navbar{
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.419), rgba(103, 103, 103, 0.197));
+  background: ghostwhite;
+  font-family: Arial;
 }
+
 .card{
   border-radius: 20px;
   background: #fff;
@@ -89,15 +80,15 @@ background-image: url(https://ionicframework.com/img/getting-started/ionic-nativ
 
 /*---------------------------------------------*/
 a {
-	font-family: Ubuntu-Regular;
+	font-family: Arial;
 	font-size: 14px;
 	line-height: 1.7;
-	color: #666666;
+	color: #151414;
 	margin: 0px;
-	transition: all 0.4s;
-	-webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
+	transition: all 0.7s;
+	-webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  -moz-transition: all 0.7s;
 }
 
 .imagen{
@@ -112,7 +103,7 @@ a:focus {
 
 a:hover {
 	text-decoration: none;
-  color: #fff;
+  color: #f751a9;
 }
 
 /*---------------------------------------------*/
@@ -120,8 +111,13 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 0px;
 }
 
+h4 {
+  font-family: Arial, sans-serif;
+  color: #d63384;
+}
+
 p {
-	font-family: Ubuntu-Regular;
+	font-family: Arial;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -279,7 +275,7 @@ iframe {
 }
 
 .login100-form-title {
-  font-family: Ubuntu-Regular;
+  font-family: Arial;
   font-size: 18px;
   padding: 20px;
   color: #555555;
@@ -301,10 +297,10 @@ iframe {
   padding: 9px 0;
 }
 
-.input100 {    
+.input100 {
   margin-left: 20px;
   margin-right: 20px;
-  font-family: Ubuntu-Regular;
+  font-family: Arial, sans-serif;
   font-size: 17px;
   color: #555555;
   line-height: 1.2;
@@ -487,7 +483,6 @@ iframe {
   position: absolute;
   max-width: 70%;
   background-color: #fff;
-  border: 1px solid #c80000;
   border-radius: 2px;
   padding: 4px 25px 4px 10px;
   top: 50%;
@@ -554,63 +549,5 @@ iframe {
   }
 }
 
-
-.waveWrapper {
-  overflow: hidden;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  margin: auto;
-}
-.waveWrapperInner {
-  position: absolute;
-  width: 100%;
-  overflow: hidden;
-  height: 100%;
-  bottom: -1px; 
-}
-.bgTop {
-  z-index: 15;
-  opacity: 0.5;
-}
-.bgMiddle {
-  z-index: 10;
-  opacity: 0.75;
-}
-.bgBottom {
-  z-index: 5;
-}
-.wave {
-  position: absolute;
-  left: 0;
-  width: 200%;
-  height: 100%;
-  background-repeat: repeat no-repeat;
-  background-position: 0 bottom;
-  transform-origin: center bottom;
-}
-.waveTop {
-  background-size: 50% 100px;
-}
-.waveAnimation .waveTop {
-animation: move-wave 3s;
- -webkit-animation: move-wave 3s;
- -webkit-animation-delay: 1s;
- animation-delay: 1s;
-}
-.waveMiddle {
-  background-size: 50% 120px;
-}
-.waveAnimation .waveMiddle {
-  animation: move_wave 10s linear infinite;
-}
-.waveBottom {
-  background-size: 50% 100px;
-}
-.waveAnimation .waveBottom {
-  animation: move_wave 15s linear infinite;
-}
 
 

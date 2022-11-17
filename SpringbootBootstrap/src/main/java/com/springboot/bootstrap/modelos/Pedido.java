@@ -37,6 +37,10 @@ public class Pedido {
     @Nullable
     private String estado;
 
+    @Column(name = "estado_diseno", length = 50)
+    @Nullable
+    private String estado_diseno;
+
     @Column(name = "observaciones", length = 240)
     @Nullable
     private String observaciones;
@@ -45,21 +49,23 @@ public class Pedido {
 
     }
 
-    public Pedido(Long id, String categoria, Integer dni, String fechapedido, String estado, String observaciones, List<Insumo> insumos) {
+    public Pedido(Long id, String categoria, Integer dni, String fechapedido, String estado, String estado_diseño, String observaciones, List<Insumo> insumos) {
         this.id = id;
         this.categoria = categoria;
         this.dni = dni;
         this.fechapedido = fechapedido;
         this.estado = estado;
+        this.estado_diseno = estado_diseño;
         this.observaciones = observaciones;
         this.insumos = insumos;
     }
 
-    public Pedido(String categoria, Integer dni, String fechapedido, String estado, String observaciones, List<Insumo> insumos) {
+    public Pedido(String categoria, Integer dni, String fechapedido, String estado, String estado_diseño, String observaciones, List<Insumo> insumos) {
         this.categoria = categoria;
         this.dni = dni;
         this.fechapedido = fechapedido;
         this.estado = estado;
+        this.estado_diseno = estado_diseño;
         this.observaciones = observaciones;
         this.insumos = insumos;
     }
@@ -67,13 +73,17 @@ public class Pedido {
     public Long getId() {
         return id;
     }
-    // ver los set no van ya que no se debe permitir  cambiar
+
     public void setId(Long id) {
         this.id = id;
     }
 
     public String getCategoria() {
         return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 
     public Integer getDni() {
@@ -84,44 +94,44 @@ public class Pedido {
         this.dni = dni;
     }
 
+    public String getFechapedido() {
+        return fechapedido;
+    }
+
+    public void setFechapedido(String fechapedido) {
+        this.fechapedido = fechapedido;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    public String getEstado_diseno() {
+        return estado_diseno;
+    }
+
+    public void setEstado_diseno(String estado_diseño) {
+        this.estado_diseno = estado_diseño;
+    }
+
+    public String getObservaciones() {
+        return observaciones;
+    }
+
+    public void setObservaciones(String observaciones) {
+        this.observaciones = observaciones;
+    }
+
     public List<Insumo> getInsumos() {
         return insumos;
     }
 
     public void setInsumos(List<Insumo> insumos) {
         this.insumos = insumos;
-    }
-
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
-    }
-
-    public String getFechapedido() {
-        return fechapedido;
-    }
-
-    public void setFechapedido(String fechapedido) {
-
-        this.fechapedido = fechapedido;
-    }
-    // no  combiare pero recorda  que los get y set no va en las id
-    public String getEstado() {
-        return estado;
-    }
-
-    public void setEstado(String estado) {
-
-        this.estado = estado;
-    }
-
-    public String getObservaciones() {
-
-        return observaciones;
-    }
-
-    public void setObservaciones(String observaciones) {
-
-        this.observaciones = observaciones;
     }
 
     @Override
@@ -132,6 +142,7 @@ public class Pedido {
                 ", dni=" + dni +
                 ", fechapedido='" + fechapedido + '\'' +
                 ", estado='" + estado + '\'' +
+                ", estado_diseno='" + estado_diseno + '\'' +
                 ", observaciones='" + observaciones + '\'' +
                 ", insumos=" + insumos +
                 '}';

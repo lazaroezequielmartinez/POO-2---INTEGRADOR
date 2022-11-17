@@ -2,250 +2,217 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/dashboard}" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
-    <title>Menu principal</title>
-    <link rel="stylesheet" type="text/css" href="/css/main.css" />
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="/css/Chart.min.css" />
-    <link rel="stylesheet" type="text/css" href="/css/util.css" />
-    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="/css/perfect-scrollbar.css" />
+    <title>Minerva Sistema</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}">
+    <link rel="shortcut icon" th:href="@{/images/favicon.svg}" type="image/x-icon">
+    <link rel="stylesheet" th:href="@{/css/app.css}">
+    <link rel="stylesheet" th:href="@{/css/general.css}">
 </head>
 <body>
-
-<span sec:authentication="principal.username"></span>
-
-<nav class="navbar navbar-inverse navbar-fixed-top">
-<div id="navbar" class="collapse navbar-collapse">
-    <ul class="nav navbar-nav">
-        <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Cerrar sesión</a></li>
-    </ul>
-</div>
-</nav>
-
 <div class="main-content container-fluid" layout:fragment="content">
     <div class="page-title">
-
-        <h3>Bienvenido <span sec:authentication="principal.username"></span></h3>
-
-        <h3>Resumen</h3>
-
-    <p class="text-subtitle text-muted">Su rol empresarial le corresponde estar al tanto de las novedades del sistema</p>
-    <p class="text-subtitle text-muted">Este panel de control lo ayudará</p>
-</div>
-
-
-<section class="section">
-    <div class="row mb-2">
-        <div class="col-12 col-md-3">
-            <div class="card card-statistic">
-                <div class="card-body p-0">
-                    <div class="d-flex flex-column">
-                        <div class='px-3 py-3 d-flex justify-content-between'>
-                            <h3 class='card-title'>Nuevos clientes - Semanal</h3>
-                            <div class="card-right d-flex align-items-center">
-                                <p> 74 </p>
-                            </div>
-                        </div>
-                        <div class="chart-wrapper">
-                            <canvas id="canvas1" style="height:100px !important"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-3">
-            <div class="card card-statistic">
-                <div class="card-body p-0">
-                    <div class="d-flex flex-column">
-                        <div class='px-3 py-3 d-flex justify-content-between'>
-                            <h3 class='card-title'>Nuevos pedidos - Semanal</h3>
-                            <div class="card-right d-flex align-items-center">
-                                <p> 567 </p>
-                            </div>
-                        </div>
-                        <div class="chart-wrapper">
-                            <canvas id="canvas2" style="height:100px !important"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-3">
-            <div class="card card-statistic">
-                <div class="card-body p-0">
-                    <div class="d-flex flex-column">
-                        <div class='px-3 py-3 d-flex justify-content-between'>
-                            <h3 class='card-title'>Balance clientes - Mensual</h3>
-                            <div class="card-right d-flex align-items-center">
-                                <p>335</p>
-                            </div>
-                        </div>
-                        <div class="chart-wrapper">
-                            <canvas id="canvas3" style="height:100px !important"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-3">
-            <div class="card card-statistic">
-                <div class="card-body p-0">
-                    <div class="d-flex flex-column">
-                        <div class='px-3 py-3 d-flex justify-content-between'>
-                            <h3 class='card-title'>Balance pedidos - Mensual</h3>
-                            <div class="card-right d-flex align-items-center">
-                                <p>1754</p>
-                            </div>
-                        </div>
-                        <div class="chart-wrapper">
-                            <canvas id="canvas4" style="height:100px !important"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <h3>Bienvenido</h3>
+        <p class="text-subtitle text-muted">Su rol le corresponde a estar al tanto de las novedades de la empresa</p>
     </div>
-    <div class="row mb-4">
-        <center><div class="col-md-8" >
-            <div class="card">
-                <div class="card-header">
-                    <h3 class='card-heading p-1 pl-3'>Balance con respecto al mes pasado</h3>
+    <section class="section">
+        <div class="row mb-2">
+            <div class="col-12 col-md-3">
+                <div class="card card-statistic">
+                    <div class="card-body p-0">
+                        <div class="d-flex flex-column">
+                            <div class='px-3 py-3 d-flex justify-content-between'>
+                                <h3 class='card-title'>CLIENTES</h3>
+                                <div class="card-right d-flex align-items-center">
+                                    <p>231</p>
+                                </div>
+                            </div>
+                            <div class="chart-wrapper">
+                                <canvas id="canvas1" style="height:100px !important"></canvas>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-md-4 col-12">
-                            <div class="pl-3">
-                                <h1 class='mt-5'>+ 13%</h1>
-                                <div class="legends">
-                                    <div class="legend d-flex flex-row align-items-center">
-                                        <div class='w-3 h-3 rounded-full bg-info me-2'></div><span
-                                            class='text-xs'>Mes pasado</span>
-                                    </div>
-                                    <div class="legend d-flex flex-row align-items-center">
-                                        <div class='w-3 h-3 rounded-full bg-blue me-2'></div><span
-                                            class='text-xs'>Mes actual</span>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card card-statistic">
+                    <div class="card-body p-0">
+                        <div class="d-flex flex-column">
+                            <div class='px-3 py-3 d-flex justify-content-between'>
+                                <h3 class='card-title'>PEDIDOS CARGADOS</h3>
+                                <div class="card-right d-flex align-items-center">
+                                    <p>62</p>
+                                </div>
+                            </div>
+                            <div class="chart-wrapper">
+                                <canvas id="canvas2" style="height:100px !important"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card card-statistic">
+                    <div class="card-body p-0">
+                        <div class="d-flex flex-column">
+                            <div class='px-3 py-3 d-flex justify-content-between'>
+                                <h3 class='card-title'>PEDIDOS LISTOS</h3>
+                                <div class="card-right d-flex align-items-center">
+                                    <p>34</p>
+                                </div>
+                            </div>
+                            <div class="chart-wrapper">
+                                <canvas id="canvas3" style="height:100px !important"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card card-statistic">
+                    <div class="card-body p-0">
+                        <div class="d-flex flex-column">
+                            <div class='px-3 py-3 d-flex justify-content-between'>
+                                <h3 class='card-title'>PEDIDOS SIN TERMINAR</h3>
+                                <div class="card-right d-flex align-items-center">
+                                    <p>21</p>
+                                </div>
+                            </div>
+                            <div class="chart-wrapper">
+                                <canvas id="canvas4" style="height:100px !important"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row mb-auto">
+
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class='card-heading p-1 pl-3'>Promedio</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4 col-12">
+                                <div class="pl-3">
+                                    <h1 class='mt-5'>32 Nuevos pedidos</h1>
+                                    <p class='text-xs'><span class="text-green"><i data-feather="bar-chart"
+                                                                                   width="15"></i> +19%</span> desde el último mes</p>
+                                    <div class="legends">
+                                        <div class="legend d-flex flex-row align-items-center">
+                                            <div class='w-3 h-3 rounded-full bg-info me-2'></div><span
+                                                class='text-xs'>Ultimo mes</span>
+                                        </div>
+                                        <div class="legend d-flex flex-row align-items-center">
+                                            <div class='w-3 h-3 rounded-full bg-blue me-2'></div><span
+                                                class='text-xs'>Mes corriente</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-8 col-12">
+                                <canvas id="bar"></canvas>
+                            </div>
                         </div>
-                        <div class="col-md-8 col-12">
-                            <canvas id="bar"></canvas>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h4 class="card-title">Pedidos cargados de hoy</h4>
+                        <div class="d-flex ">
+                            <i data-feather="download"></i>
+                        </div>
+                    </div>
+                    <div class="card-body px-0 pb-0">
+                        <div class="table-responsive">
+                            <table class='table mb-0' id="table1">
+                                <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Apellido</th>
+                                    <th>Email</th>
+                                    <th>Pedido</th>
+                                    <th>Estado</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Graiden</td>
+                                    <td>vehicula.aliquet@semconsequat.co.uk</td>
+                                    <td>076 4820 8838</td>
+                                    <td>Offenburg</td>
+                                    <td>
+                                        <span class="badge bg-success">Active</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Dale</td>
+                                    <td>fringilla.euismod.enim@quam.ca</td>
+                                    <td>0500 527693</td>
+                                    <td>New Quay</td>
+                                    <td>
+                                        <span class="badge bg-success">Active</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Nathaniel</td>
+                                    <td>mi.Duis@diam.edu</td>
+                                    <td>(012165) 76278</td>
+                                    <td>Grumo Appula</td>
+                                    <td>
+                                        <span class="badge bg-danger">Inactive</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Darius</td>
+                                    <td>velit@nec.com</td>
+                                    <td>0309 690 7871</td>
+                                    <td>Ways</td>
+                                    <td>
+                                        <span class="badge bg-success">Active</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Ganteng</td>
+                                    <td>velit@nec.com</td>
+                                    <td>0309 690 7871</td>
+                                    <td>Ways</td>
+                                    <td>
+                                        <span class="badge bg-success">Active</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Oleg</td>
+                                    <td>rhoncus.id@Aliquamauctorvelit.net</td>
+                                    <td>0500 441046</td>
+                                    <td>Rossignol</td>
+                                    <td>
+                                        <span class="badge bg-success">Active</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Kermit</td>
+                                    <td>diam.Sed.diam@anteVivamusnon.org</td>
+                                    <td>(01653) 27844</td>
+                                    <td>Patna</td>
+                                    <td>
+                                        <span class="badge bg-success">Active</span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <form
-                    class="login100-form validate-form p-b-33 p-t-5"
-                    th:action="@{/configAtenPub}"
-                    method="post"
-            >
-
-            <div class="container-login100-form-btn m-t-32">
-                <button class="login100-form-btn" type="submit">Acceder a menú para registros de clientes y pedidos</button>
-            </div>
-            </form>
-
-            <div class="card">
-                <div class="card-header d-flex justify-content-between align-items-center">
-                    <h4 class="card-title">Pedidos pendientes</h4>
-                    <div class="d-flex ">
-                        <i data-feather="download"></i>
-                    </div>
-                </div>
-                <div class="card-body px-0 pb-0">
-                    <div class="table-responsive">
-                        <table class='table mb-0' id="table1">
-                            <thead>
-                            <tr>
-                                <th>Código de pedido</th>
-                                <th>Código de cliente</th>
-                                <th>Categoria</th>
-                                <th>Fecha de entrega</th>
-                                <th>Estado</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>R5451</td>
-                                <td>43086981</td>
-                                <td>Revista</td>
-                                <td>30/09/22</td>
-                                <td>
-                                    <span class="badge bg-success">Finalizado</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>R5451</td>
-                                <td>43086981</td>
-                                <td>Revista</td>
-                                <td>30/09/22</td>
-                                <td>
-                                    <span class="badge bg-success">Finalizado</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>R5451</td>
-                                <td>43086981</td>
-                                <td>Revista</td>
-                                <td>30/09/22</td>
-                                <td>
-                                    <span class="badge bg-danger">No iniciado</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>R5451</td>
-                                <td>43086981</td>
-                                <td>Revista</td>
-                                <td>30/09/22</td>
-                                <td>
-                                    <span class="badge bg-success">Finalizado</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>R5451</td>
-                                <td>43086981</td>
-                                <td>Revista</td>
-                                <td>30/09/22</td>
-                                <td>
-                                    <span class="badge bg-success">Finalizado</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>R5451</td>
-                                <td>43086981</td>
-                                <td>Revista</td>
-                                <td>30/09/22</td>
-                                <td>
-                                    <span class="badge bg-success">Finalizado</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>R5451</td>
-                                <td>43086981</td>
-                                <td>Revista</td>
-                                <td>30/09/22</td>
-                                <td>
-                                    <span class="badge bg-success">Finalizado</span>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div></center>
-    </div>
-</section>
+        </div>
+    </section>
 </div>
-<script th:src="@{/js/feather.min.js}"></script>
-<script th:src="@{/js/perfect-scrollbar.min.js}"></script>
-<script th:src="@{/js/app.js}"></script>
-<script></script>
-<script th:src="@{/js/Chart.min.js}"></script>
-<script th:src="@{/js/apexcharts.min.js}"></script>
-<script th:src="@{/js/dashboard.js}"></script>
-
-<script th:src="@{/js/main.js}"></script>
 </body>
+<script th:src="@{/js/feather.min.js}"></script>
+<script th:src="@{/js/app.js}"></script>
+<script th:src="@{/js/main.js}"></script>
 </html>

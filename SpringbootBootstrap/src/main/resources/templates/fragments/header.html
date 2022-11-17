@@ -1,71 +1,61 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
-    <title>Menu principal</title>
+    <title>Title</title>
 </head>
 <body>
     <nav class="navbar navbar-header navbar-expand navbar-light" th:fragment="header"><!--header-->
-        <a class="navbar-brand" href="#">
-            <img src="/images/LogoMinerva.png" alt="LogoMinerva" width="90px" />
-        </a>
-        <a class="sidebar-toggler" href="#"><span class="navbar-toggler-icon"></span></a>
-        <button class="btn navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav d-flex align-items-center navbar-light ms-auto">
-                <li class="dropdown nav-icon">
-                    <a href="#" data-bs-toggle="dropdown"
-                       class="nav-link  dropdown-toggle nav-link-lg nav-link-user">
-                        <div class="d-lg-inline-block">
-                            <i data-feather="bell"></i>
-                        </div>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-end dropdown-menu-large">
-                        <h6 class='py-2 px-4'>Notificaciones</h6>
-                        <ul class="list-group rounded-none">
-                            <li class="list-group-item border-0 align-items-start">
-                                <div class="avatar bg-success me-3">
-                                    <span class="avatar-content"><i data-feather="shopping-cart"></i></span>
-                                </div>
-                                <div>
-                                    <h6 class='text-bold'>Nuevo producto</h6>
-                                    <p class='text-xs'>
-                                        Hey, soy laza, te aviso que cargamos al sistema nuevas Tintas de color rojo
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="dropdown nav-icon me-2">
-                    <a href="#" data-bs-toggle="dropdown"
-                       class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-                        <div class="d-lg-inline-block">
-                            <i data-feather="mail"></i>
-                        </div>
-                    </a>
-                </li>
-                <a href="#">
-                    <div class="avatar me-1">
-                        <img src="/images/LogoMinerva.png" alt="" srcset="" width="35px" height="20px">
+    <a class="sidebar-toggler" href="#"><span class="navbar-toggler-icon"></span></a>
+    <button class="btn navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav d-flex align-items-center navbar-light ms-auto">
+            <li class="dropdown nav-icon">
+                <a href="#" data-bs-toggle="dropdown"
+                   class="nav-link  dropdown-toggle nav-link-lg nav-link-user">
+                    <div class="d-lg-inline-block">
+                        <i data-feather="bell"></i>
                     </div>
                 </a>
-                <div class="d-none d-md-block d-lg-inline-block">Atención al público</div>
-                <li class="nav-link dropdown-toggle nav-link-lg nav-link-user" data-bs-toggle="dropdown">
-                    <div class="dropdown-menu dropdown-menu-end">
-                        <a class="dropdown-item" href="#"><i data-feather="user"></i> Cuenta </a>
-                        <a class="dropdown-item active" href="#"><i data-feather="mail"></i> Mensajes</a>
-                        <a class="dropdown-item" href="#"><i data-feather="settings"></i> Configuraciones </a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#"><i data-feather="log-out"></i> Salir </a>
+                <div class="dropdown-menu dropdown-menu-end dropdown-menu-large">
+                    <h6 class='py-2 px-4'>Notificaciones</h6>
+                    <ul class="list-group rounded-none">
+                        <li class="list-group-item border-0 align-items-start">
+                            <div class="avatar bg-success me-3">
+                                <span class="avatar-content"><i data-feather="shopping-cart"></i></span>
+                            </div>
+                            <div>
+                                <h6 class='text-bold'>Nuevo pedido</h6>
+                                <p class='text-xs'>
+                                    Se ha cargado un nuevo pedido al sistema
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-bs-toggle="dropdown"
+                   class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                    <div class="avatar me-1">
+                        <img src="/images/buho.ico" alt="" srcset="">
                     </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
+                    <div class="d-none d-md-block d-lg-inline-block">Hola, <span sec:authentication="principal.username"></span></div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end">
+                    <a class="dropdown-item" href="#"><i data-feather="user"></i>Cuenta</a>
+                    <a class="dropdown-item active" href="#"><i data-feather="mail"></i> Mensajes</a>
+                    <a class="dropdown-item" href="#"><i data-feather="settings"></i> Configuraciones</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" sec:authorize="isAuthenticated()" th:href="@{/logout}"><i data-feather="log-out"></i>Salir</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
 </body>
 </html>
