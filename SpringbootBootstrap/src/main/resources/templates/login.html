@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <title>Inicio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/util.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}" />
+    <!--===============================================================================================-->
+</head>
+
+<body>
+<div class="limiter">
+    <div
+            class="container-login100"
+            style="background-image: url('/images/bg-01.jpg')"
+    >
+        <div class="wrap-login100 p-t-30 p-b-50">
+
+
+
+            <form
+                    class="login100-form validate-form p-b-33 p-t-5"
+                    th:action="@{/login}"
+                    method="post"
+            >
+                <p></p>
+
+                <span class="login100-form-title p-b-41"> Bienvenido </span>
+
+
+                <center><img src="/images/LogoMinerva.png" width="200px" /></center>
+
+                <span class="login100-form-title p-b-41"> Acceso al sistema </span>
+
+                <div th:if=${param.error}>
+                    <div class="alert alert-danger">
+                        Usuario o contraseña incorrectos
+                    </div></div>
+
+                <div th:if=${param.logout}>
+                    <div class="alert alert-info">
+                        Ha cerrado sesión exitosamente
+                    </div></div>
+
+
+                <div class="wrap-input100 validate-input" data-validate="Ingresa un nombre">
+                    <input name="username" for="username" placeholder="Email" class="input100" id="username" type="text" required autofocus="autofocus"></input>
+                    <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Ingresa una contraseña">
+                    <input name="password" for="password" class="input100" type="password" id="password" placeholder="Contraseña"></input>
+                    <span class="focus-input100" data-placeholder="&#xe80f;"></span>
+                </div>
+
+                <div class="container-login100-form-btn m-t-32">
+                    <button class="login100-form-btn" type="submit">Acceder</button>
+                </div>
+
+            </form>
+
+            <div class="form-group">
+                <span><a th:href="@{/registro}">Registrar</a> un nuevo usuario al sistema...</span>
+            </div>
+
+
+            <p>
+
+            </p>
+
+
+            <form
+                    class="login100-form validate-form p-b-33 p-t-5"
+                    th:action="@{/Roles}"
+                    method="post"
+            >
+            <div class="container-login100-form-btn m-t-32">
+                <button class="login100-form-btn" type="submit">Iteracion Nro 3</button>
+            </div>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
+<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+<script th:src="@{/js/main.js}"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

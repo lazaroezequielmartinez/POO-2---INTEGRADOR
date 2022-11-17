@@ -9,10 +9,11 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light">
-	<div class="container-fluid">
+	<div class="container-fluid" >
 		<a class="navbar-brand" href="#">
 			<img src="/images/LogoMinerva.png" alt="LogoMinerva" width="90px" th:action="@{/AtenPubRegCli}" method="post"/>
 		</a>
+
 		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 			<li class="nav-item dropdown">
 				<a
@@ -40,22 +41,25 @@
 </nav>
 <!-- End -->
 
+
+
 	<div class="container">
 		<div class="row">
 			<h1>Lista de clientes</h1>
 		</div>
+		<h4>Clientes registrados en el sistema</h4>
 		<div class="row">
 		   <div class="col-lg-3">
 		     <a th:href="@{/usuarios/nuevo}" class="btn btn-primary btn-sm mb3">Agregar clientes</a>
 		   </div>
 		</div>
 		<br>
-		<table class="table table-striped table-bordered">
-			<thead class="table-dark">
+		<table class="table table-striped table-hover table-bordered">
+			<thead class="table-active">
 				<tr>
 					<th>Cod Cliente</th>
 					<th>DNI</th>
-					<th>Nombre</th>
+					<th><a class="sorted" th:pagination-sort="nombre"></a>Nombre</th>
 					<th>Apellido</th>
 					<th>Teléfono</th>
 					<th>Dirección</th>
@@ -64,21 +68,35 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr th:each="usuarios : ${usuarios}">
-					<td th:text="${usuarios.id}">Cod Cliente</td>
-					<td th:text="${usuarios.dni}">DNI</td>
-					<td th:text="${usuarios.nombre}">Nombre</td>
-					<td th:text="${usuarios.apellido}">Apellido</td>
-					<td th:text="${usuarios.telefono}">Teléfono</td>
-					<td th:text="${usuarios.direccion}">Dirección</td>
-					<td th:text="${usuarios.email}">Email</td>
-					<td>
+				<tr th:each="usuarios, rowStat : ${usuarios}">
+					<td><span th:text="${usuarios.id}"></span></td>
+					<td><span th:text="${usuarios.dni}"></span></td>
+					<td><span th:text="${usuarios.nombre}"></span></td>
+					<td><span th:text="${usuarios.apellido}"></span></td>
+					<td><span th:text="${usuarios.telefono}"></span></td>
+					<td><span th:text="${usuarios.direccion}"></span></td>
+					<td><span th:text="${usuarios.email}"></span></td>
+					<td><p>
 					  <a th:href="@{/usuarios/editar/{id}(id=${usuarios.id})}" class="btn btn-info">Editar</a>
 					  <a th:href="@{/usuarios/{id}(id=${usuarios.id})}" class="btn btn-danger">Eliminar</a>
-					</td>
+					</p></td>
 				</tr>
 			</tbody>
 		</table>
+		<div class="row">
+			<div class="col-sm-6">
+				<div sd:pagination-summary="">info</div>
+			</div>
+			<div class="col-sm-6">
+				<nav class="pull-right">
+					<ul class="pagination" sd:pagination-split="7" sd:pagination="full">
+						<!-- Pagination created by SpringDataDialect, this content is just for mockup -->
+						<li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+						<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
 	</div>
 
 </body>

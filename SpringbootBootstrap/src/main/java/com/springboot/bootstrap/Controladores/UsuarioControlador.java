@@ -1,10 +1,16 @@
 package com.springboot.bootstrap.Controladores;
 
 import com.springboot.bootstrap.modelos.Usuario;
+import com.springboot.bootstrap.repositorio.UsuarioRepositorio;
 import com.springboot.bootstrap.servicios.UsuarioServicio;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
+import org.springframework.data.web.SortDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,9 +22,13 @@ public class UsuarioControlador {
     @Autowired
     private UsuarioServicio servicio;
 
+    @Autowired
+    UsuarioRepositorio usuarioRepositorio;
+
     @GetMapping({ "/usuarios", })
-    public String listarUsuarios(Model modelo) {
-        modelo.addAttribute("usuarios", servicio.listarTodosLosUsuarios());
+    public String listarUsuarios(ModelMap modelo, @PageableDefault(size = 10)@SortDefault("nombre")Pageable pageable) {
+        Page page = usuarioRepositorio.findAll(pageable);
+        modelo.addAttribute("usuarios", page);
         return "/pages/usuarios";
     }
 
