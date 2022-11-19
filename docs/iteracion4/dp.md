@@ -115,5 +115,3 @@
 - Para solicitar informe y acciones de ventas debo ser administrador para tener información de las ventas semanales e informe de stock, tener sesión iniciada.
 - Para solicitar un informe de clientes habituales debo ser administrador y encargado de impresión para tener un informe de los clientes habituales de los ultimos 30 dias, tener sesión iniciada.
   
-# Restropectiva
-## Reflexión: Se avanzó mucho con respecto a la entrega anterior a comparacion de las demás, el trabajo está creciendo de forma exponencial. De acuerdo  con estos resultados consideramos que estamos por buen camino. 
