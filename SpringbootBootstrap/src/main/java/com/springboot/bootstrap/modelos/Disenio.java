@@ -19,10 +19,13 @@ public class Disenio {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_disenio", nullable = false)
     private Integer id;
+
     @Column(name="estado")
     private String estado;
+
     @Column(name="tipo_disenio")
     private String tipo_disenio;
+
     @ManyToOne
     @JoinColumn(name="id-pedido")
     private Pedido pedidos;
